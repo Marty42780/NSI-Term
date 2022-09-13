@@ -1,0 +1,172 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Generalites                                */
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------------- Textes --------------------------------- */
+h1, h3, p, ul {
+  color: var(--dark-solid-text-color)
+}
+
+div.t { /* Div des themes */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+h3 { /* Numéros des activités */
+  margin-top: 2em;
+  text-align: center;
+  font-size: 22px;
+}
+h1:not(#top-bar h1) { /*Titre des activtés */
+  margin-top: 0;
+  text-align: center;
+  font-size: 28px;
+}
+h2 { /* Titre des elements */
+  margin: 2em 2em 1em 2em;
+}
+/* ---------------- Zones dans les themes (ex: part1, part2) ---------------- */
+.t-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+
+
+/* -------------------------- Div de Documentation -------------------------- */
+div.doc {
+  margin: 1em;
+}
+p, ul:not(#top-bar ul){
+  font-size: 15;
+  line-height: 1.6;
+  font-weight: 500;
+}
+ul:not(#top-bar ul){
+  padding-left: 25px;
+}
+
+/* --------- Div : Autre élements (pdf, images) ----------*/
+iframe.pdf {
+  margin: 1em 1em 1em 2em;
+  height: 650px;
+  border-radius: 10px;
+  box-shadow: var(--main-box-shadow);
+}
+img:not(#menuDiv img) {
+  margin: 1em 1em 1em 2em;
+  border-radius: 10px;
+  box-shadow: var(--main-box-shadow);
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Theme par theme                              */
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------------- Thème 1 -------------------------------- */
+#t1 {
+  background-color: rgb(255, 158, 158);
+}
+@media screen and (min-width: 1300px) {
+  .t1-pdf {
+    width: 72%;
+  }
+  #t1 img.girafe {
+    height: 650px;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .t1-pdf {
+    width: 95%;
+  }
+  #t1 img.girafe {
+    display: none;
+  }
+}
+
+/* --------------------------------- Thème 2 -------------------------------- */
+#t2 {
+  background-color: rgb(219, 205, 126);
+}
+#t2 div.doc {
+  align-items: center;
+}
+
+/* --------------------------------- Thème 3 -------------------------------- */
+#t3 {
+  background-color: rgb(80, 209, 170);
+}
+#t3 img.elephant {
+  border-radius: 100%;
+}
+
+/* --------------------------------- Thème 4 -------------------------------- */
+#t4 {
+  background-color: rgb(80, 166, 209);
+}
+#t4 div.doc {
+  margin: 1em 0 1em 2em;
+  width: 40em;
+}
+#t4 img {
+  height: 441px;
+}
+.t4-pdf {
+  width: 40%;
+}
+
+/* --------------------------------- Thème 5 -------------------------------- */
+#t5 {
+  background-color: rgb(80, 110, 209);
+}
+#t5 div.doc {
+  width: 60em;
+}
+#t5 img {
+  width: 40%;
+}
+#t5 div div img { /* Schema dans la div.doc */
+  width: 70%;
+}
+.t5-pdf {
+  width: 45%;
+}
+
+/* --------------------------------- Thème 7 -------------------------------- */
+#t7 {
+  background-color: rgb(151, 80, 209);
+}
+#t7 img.part1 {
+  width: 27%;
+}
+#t7 img.part2 {
+  height: 300px;
+}
+
+
+/* --------------------------------- Thème 8 -------------------------------- */
+#t8 {
+  background-color: rgb(218, 104, 184);
+}
+#t8 div.doc {
+  width: 50%;
+}
+#t8 img.lion {
+  width: 27%;
+}
+#t8 img.part2 {
+  width: 90%;
+}
+
+/* --------------------------------- Thème 9 -------------------------------- */
+#t9 {
+  background-color: rgb(223, 213, 83);
+}
+#t9 img {
+  width: 27%;
+}

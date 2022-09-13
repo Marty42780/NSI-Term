@@ -1,0 +1,141 @@
+body {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255,0,0,0) 70.71%), linear-gradient(127deg, rgba(98, 255, 0, 0.8), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  background-repeat: no-repeat;
+}
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+  
+}
+.zone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Zone 1                                   */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1300px) {
+  .z1 {
+    flex-direction: column;
+  }
+}
+
+
+/* ------------------------------ Presentation ------------------------------ */
+#presentation {
+  margin: 2em;
+  padding: 0.7em 2em 1.2em 1.2em;
+  width: 30em;
+}
+#presentation div {
+  display: flex;
+  align-items: baseline;
+}
+#presentation p {
+  color: var(--dark-solid-text-color);
+  text-align: justify;
+  font-size: 15;
+  line-height: 1.6;
+  font-weight: 500;
+  padding-left: 0.7em;
+}
+
+/* -------------------------------- Carousel -------------------------------- */
+
+#carousel {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 100%;
+}
+#carousel img {
+  width: 100%;
+  object-fit: fill;
+}
+#buttonDiv {
+  display: block;
+}
+#carousel div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#carousel a {
+  /* Position and Size */
+  width: 100%;
+  padding: 8.3px 10px 10px 10px;
+  /* Text */
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  /* Visual */
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+#carousel a.prev { border-radius: 5px 0 0 5px; }
+#carousel a.next { border-radius: 0 5px 5px 0; }
+
+/* -------------------------------------------------------------------------- */
+/*                                   Zone 2                                   */
+/* -------------------------------------------------------------------------- */
+
+
+/* ---------------------------------- Demo ---------------------------------- */
+
+#demo {
+  width: 100%;
+  flex-direction: column;
+  background-color: #0d1117;
+}
+#demo h2, h4, p, ul {
+  color: var(--light-solid-text-color)
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   zfooter                                  */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1400px) {
+  .z3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+.z3 a {
+  margin: 1em;
+}
+.z3 div {
+  /* Position */
+  flex-direction: row;
+  bottom: 0;
+  height: 100px;
+  padding: 1em 1.5em 1em 1em;
+  align-items: center;
+  /* Text */
+  font-size: 20px;
+  font-weight: bold;
+}
+.z3 a img {
+  max-width: 10em;
+  padding-right: 1.5em;
+  max-height: 70px;
+}
+#link-mdn_doc div {
+  padding: 1.5em;
+}
+#link-mdn_doc img {
+  max-width: 100%;
+  max-height: 80px;
+  min-width: 190px;
+  padding: 0;
+} 

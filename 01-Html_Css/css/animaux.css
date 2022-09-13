@@ -1,0 +1,139 @@
+body {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(98, 255, 0, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.animaux-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+}
+#product {
+  display: flex;
+  width: 350px;
+  margin: 1em;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: var(--main-box-shadow);
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  flex-direction: column;
+}
+#product section.images {
+  height: 250px;
+}
+#product img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+#product h2 {
+  color: var(--text);
+  text-transform: uppercase;
+}
+#product h1 {
+  color: var(--text);
+  padding: 0.7em 0.5em 0.5em 0.5em;
+  margin: 0;
+}
+#product .pay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+#product .pay * {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+#product button {
+  font-size: 30px;
+  /* color: #065fd4; */
+  padding: 10px;
+  background-color: #F4D03F;
+  border-radius: 10px;
+  border: 1px solid var(--text);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#product button:hover {
+  transform: scale(105%);
+  transition: transform 0.3s ease;
+}
+
+#panier {
+  position: fixed;
+  background-color: white;
+  height: 68%;
+  width: 25%;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 20px 0 0 20px;
+  box-shadow: var(--main-box-shadow);
+}
+#panier h1 {
+  text-align: center;
+  padding: 0.5em;
+  margin: 0;
+  color: var(--text);
+}
+#panier .items {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  margin: 0;
+}
+#panier .item {
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  margin: 1em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#panier .item img.animal {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+#panier .item h2 {
+  font-size: 20px;
+  color: var(--text);
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+
+}
+#panier .item h3 {
+  font-size: 20px;
+  color: var(--text);
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+
+}
+#panier .item button {
+  padding: 7px;
+  background-color: #f43f3f;
+  border-radius: 10px;
+  border: 1px solid var(--text);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#panier .item button:hover {
+  transform: scale(105%);
+  transition: transform 0.3s ease;
+}
+#panier .item img.trash-icon {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 10px;
+}

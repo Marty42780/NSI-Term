@@ -1,0 +1,38 @@
+* {
+  font-family: "Inter var", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu,
+    Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  box-sizing: border-box;
+  
+  --text: #333338;
+  --dark-solid-text-color: #333338;
+  --dark-light-text-color: #3b3b3b;
+  --light-light-text-color: #c2c2cf;
+  --light-solid-text-color: #ececff;
+
+  --accueil: #CD6155; /* POMEGRANATE */
+  --themes: #AF7AC5; /* AMETHYST */
+  --animaux: #5499c7; /* BELIZE HOLE */
+  --expose: #48C9B0; /* TURQUOISE */
+  --disable: #AAB7B8; /* CONCRETE */
+  --not_use_1: #52BE80; /* NEPHRITIS */
+  --not_use_2: #F4D03F; /* SUNFLOWER */
+  --not_use_3: #EB984E; /* CARROT */
+
+  --main-box-shadow : inset 0 1px 1px 0 hsl(0deg 0% 100% / 15%),
+  0 50px 100px -20px rgb(50 50 93 / 30%), 0 30px 60px -30px rgb(0 0 0 / 50%),
+  -10px 10px 60px -10px rgb(103 178 111 / 30%);
+}
+body {
+  margin: 0;
+}
+.doc {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em 1.5em 2em;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: var(--main-box-shadow);
+  line-height: 1.5;
+}

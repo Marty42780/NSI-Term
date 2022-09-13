@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/accueil.css"/>
+    <link rel="stylesheet" href="css/elements.css">
+    <title>Acceuil - NSI Martin Pasquier</title>
+  </head>
+  <body onload="showSlide(0)">
+    <!-- IMPORT OF #top-bat AND #menuDiv -->
+    <script>acceuil = ["#", "disable"];</script>
+    <script src="js/navigation.js"></script>
+    <script src="js/script.js"></script>
+    <section class="content">
+      <section class="zone z1"> <!-- Zone 1 -->
+        <!-- Presentation -->
+        <div class="doc" id="presentation">
+        <center><h1>Hi! 👋 Je m'appelle Martin</h1>
+        <h3>Je suis élève de 1ère 1 au Lycée Thomas Hélye</h3></center>
+        <div>
+          <p>👦</p><p>J'ai choisi la NSI pour en apprendre d'avantage dans le monde de la programmation, de l'informatique, et de la technologie.</p>
+        </div>
+        <div>
+          <p>👉</p><p>Depuis le début de l'année j'ai parcouru plein de thèmes à travers différentes activités et je vous invite a les découvrir <a href="#" onclick="showMenu()" id="bioIci"><em>ici</em></a>.</p>
+        </div>
+        <div>
+          <p><img src="images/accueil-github_logo.svg" height="15px"></p><p>Une page Github de l'ensemble du travail de l'année est disponible <a href="https://github.com/Marty42780/NSI-1ere" target="_blank" rel="noopener noreferrer"><em>ici</em></a>.</p>
+        </div>
+        </div>
+        <!-- Carousel -->
+        <div class="doc" id="carousel">
+          <div class="carousel-button">
+            <a onclick="changeSlideWithButon(-1)" class="prev">&#10094;</a>
+          </div>
+          <img src="img/2022-07-07_256 - Caroline Hellegeais.jpg" alt="Carousel d'images" id="slide">
+          <div class="carousel-button">
+            <a onclick="changeSlideWithButon(1)" class="next">&#10095;</a>
+          </div>
+          <script src="js/accueil-carousel.js"></script>
+        </div>
+      </section>
+      <section class="zone z2"> <!-- Zone 2 -->
+        <!-- Demo -->
+        <div class="doc" id="demo">
+          <h2>Numérique et Sciences Informatiques</h2>
+          <p>La spécialité NSI est une nouvelle spécialité de 2020.</p>
+          <p>On y apprend les bases de la programmation en vue d'être capable d'élaborer des sites internet, des applications, etc...</p>
+          <h4>Il existes 4 concepts fondamentaux en NSI :</h4>
+            <ul>
+              <li>Les données</li>
+              <li>Les algorithmes</li>
+              <li>Les langages</li>
+              <li>Les machines</li>
+            </ul>
+        </div>
+      </section>
+      <section class="zone z3">
+          <a href="https://lycee-thomas-helye.fr/" target="_blank" rel="noopener noreferrer">
+            <div class="doc">
+              <img src="images/Logo_lycee_nofont.png">
+              Site du Lycée
+            </div>
+          </a>
+          <a href="https://developer.mozilla.org/fr/" id="link-mdn_doc" target="_blank" rel="noopener noreferrer">
+            <div class="doc">
+              <img src="images/accueil-mdn_web_docs_logo.svg" class="mdn">
+            </div>
+          </a>
+          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+            <div class="doc">
+              <img src="images/accueil-vscode_logo.png" alt="Logo de VSCode">
+              VSCode
+            </div>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <div class="doc">
+              <img src="images/accueil-github_logo.svg" alt="Logo de Github">
+              Github
+            </div>
+          </a>
+      </section>
+    </section>
+  </body>
+</html>
