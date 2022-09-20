@@ -1,6 +1,6 @@
 # Commandes SQL
 
-SQLite nous a permis de gérer des bases de données en SQL.
+Vous trouverez ci-dessous une liste des commandes SQL usuelles.
 
 ## Commantaires en SQL
 
@@ -10,12 +10,25 @@ SQLite nous a permis de gérer des bases de données en SQL.
 
 ## Gérer la base de données
 
-| Commande                    |                  Usages |
-| :-------------------------- | ----------------------: |
-| `CREATE DATABASE db_name`   |  Créer une base de données |
-| `DROP DATABASE db_name`     |  Supprimer une base de données |
-| `CREATE TABLE table_name`   |  Créer une table dans la base de données |
-| `TRUNCATE TABLE table_name` |  Supprimer toutes les données d'une table |
+| Commande                              |                                        Usages |
+| :------------------------------------ | --------------------------------------------: |
+| `CREATE DATABASE db_name`             |                     Créer une base de données |
+| `DROP DATABASE db_name`               |                 Supprimer une base de données |
+| `CREATE TABLE table_name`             |       Créer une table dans la base de données |
+| `ALTER TABLE table_name instruction`  |                            Modifier une table |
+| `TRUNCATE TABLE table_name`           |      Supprimer toutes les données d'une table |
+| `DROP TABLE table_name`               |  Supprimer une table dans une base de données |
+
+## Gérer la table
+
+| Commande                              |                  Usages |
+| :------------------------------------ | ----------------------: |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 ## Gérer des données
 
@@ -42,19 +55,21 @@ SQLite nous a permis de gérer des bases de données en SQL.
 
 | Commande                                |                                      Usages |
 | :-------------------------------------- | ------------------------------------------: |
-| `table1 JOIN table2 USING (common_key)` |                         Joindre deux tables |
+| `table1 JOIN table2 USING (common_key)` |  Joindre deux tables avec une clé étrangère |
 | `WHERE condition`                       |                          Filtre des données |
 | `ORDER BY column ASC / DESC`            |  Filtre des données (croissant/décroissant) |
 
 ## Comparer des valeurs
 
-| Commande   |                                        Usages  |
-| :--------- | ---------------------------------------------: |
-| `<`        |               Comparer par infériorité stricte |
-| `>`        |               Comparer par supériorité stricte |
-| `<=`       |                 Comparer par infériorité large |
-| `>=`       |                 Comparer par supériorité large |
-| `=`        |                           Comparer par égalité |
-| `LIKE`     |   Comparer par une chaîne de caractères modèle |
-| `AND`      |  Vérifier que plusieurs conditions sont vraies |
-| `OR`       |   Vérifier qu'au moins une condition est vraie |
+| Commande                         |                                        Usages  |
+| :------------------------------- | ---------------------------------------------: |
+| `<`                              |               Comparer par infériorité stricte |
+| `>`                              |               Comparer par supériorité stricte |
+| `<=`                             |                 Comparer par infériorité large |
+| `>=`                             |                 Comparer par supériorité large |
+| `<>`                             |                       Comparer par non-égalité |
+| `=`                              |                           Comparer par égalité |
+| `LIKE`                           |   Comparer par une chaîne de caractères modèle |
+| `AND`                            |  Vérifier que plusieurs conditions sont vraies |
+| `OR`                             |   Vérifier qu'au moins une condition est vraie |
+| `BETWEEN 'value1' AND 'value2'`  |  Vérifier qu'une valeur est dans un intervalle |
