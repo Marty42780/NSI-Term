@@ -24,12 +24,12 @@ Vous trouverez ci-dessous une liste des commandes SQL usuelles.
 
 ## Gérer des données
 
-| Commande                                              |                  Usages |
-| :---------------------------------------------------- | ----------------------: |
-| `SELECT [DISTINCT] data [AS alias] FROM table`        |  Affiche ou Sélectionne |
-| `INSERT INTO table VALUES ('value1', 'value2', ...)`  |       Insère des lignes |
-| `UPDATE table SET column = 'value'`                   |      Change des valeurs |
-| `DELETE FROM table`                                   |      Efface des valeurs |
+| Commande                                              |                                                  Usages |
+| :---------------------------------------------------- | ------------------------------------------------------: |
+| `SELECT [DISTINCT] data [AS alias] FROM table`        |  Affiche ou Sélectionne [sans doublons] [sous un alias] |
+| `INSERT INTO table VALUES ('value1', 'value2', ...)`  |                                       Insère des lignes |
+| `UPDATE table SET column = 'value'`                   |                                      Change des valeurs |
+| `DELETE FROM table`                                   |                                      Efface des valeurs |
 
 
 ## Joindre des requêtes
@@ -65,25 +65,23 @@ Vous trouverez ci-dessous une liste des commandes SQL usuelles.
 | `ORDER BY column ASC / DESC`              |               Ordonne des données (croissant/décroissant) |
 | `LIMIT count [OFFSET start]`              |  Limite le nombre de résultats [décalés de start valeurs] |
 
-![Document illustratif des différentes jointures possibles](./resources/SQL_Joins.svg)
-*Figuré : Les différentes jointures*
 
 ## Comparer des valeurs
 
-| Commande                         |                                            Usages |
-| :------------------------------- | ------------------------------------------------: |
-| `<`                              |                   Compare par infériorité stricte |
-| `>`                              |                   Compare par supériorité stricte |
-| `<=`                             |                     Compare par infériorité large |
-| `>=`                             |                     Compare par supériorité large |
-| `<>`                             |                           Compare par non-égalité |
-| `=`                              |                               Compare par égalité |
-| `BETWEEN 'value1' AND 'value2'`  |      Vérifie qu'une valeur est dans un intervalle |
-| `LIKE`                           |       Compare par une chaîne de caractères modèle |
-| `AND`                            |      Vérifie que plusieurs conditions sont vraies |
-| `OR`                             |       Vérifie qu'au moins une condition est vraie |
-| `IN ('value1', 'value2', ...)`   |   Vérifie qu'une valeur est dans un set de donnée |
-| `IS [NOT] NULL`                  |              Vérifie qu'une valeur est [non] NULL |
+| Commande                         |                                           Usages |
+| :------------------------------- | -----------------------------------------------: |
+| `<`                              |                  Compare par infériorité stricte |
+| `>`                              |                  Compare par supériorité stricte |
+| `<=`                             |                    Compare par infériorité large |
+| `>=`                             |                    Compare par supériorité large |
+| `<>`                             |                          Compare par non-égalité |
+| `=`                              |                              Compare par égalité |
+| `BETWEEN 'value1' AND 'value2'`  |     Vérifie qu'une valeur est dans un intervalle |
+| `LIKE`                           |      Compare par une chaîne de caractères modèle |
+| `AND`                            |     Vérifie que plusieurs conditions sont vraies |
+| `OR`                             |      Vérifie qu'au moins une condition est vraie |
+| `IN ('value1', 'value2', ...)`   |  Vérifie qu'une valeur est dans un set de donnée |
+| `IS [NOT] NULL`                  |             Vérifie qu'une valeur est [non] NULL |
 
 
 ## Caractères génériques (utilisés avec `LIKE`)
@@ -105,3 +103,47 @@ CASE column
 END
 ``` 
 *Figure : Conditions SI, SINON*
+
+
+# Annexe
+
+Ressources explicatives complémentaires
+
+
+## Gérer des bases de données et des tables
+
+
+## Gérer des données
+
+
+## Joindre des requêtes
+
+![Document illustratif des différentes jointures possibles](./resources/sql-ensemble-union-300.png)
+![Document illustratif des différentes jointures possibles](./resources/sql-ensemble-intersect-300.png)
+![Document illustratif des différentes jointures possibles](./resources/sql-ensemble-minus-300.png)  
+*Figurés : Les jointures de requêtes*
+
+```sql
+SELECT column1 FROM table1 UNION SELECT column2 FROM table1
+
+<=>
+
+SELECT column1, column2 FROM table1
+```
+
+## Données sélectionnables
+
+![Document illustratif des différentes jointures possibles](./resources/SQL_Joins.png)  
+*Figuré : Les jointures de tables*
+
+
+## Spécifications principales
+
+
+## Comparer des valeurs
+
+
+## Caractères génériques (utilisés avec `LIKE`)
+
+
+## 
