@@ -1,6 +1,7 @@
 # Commandes SQL
 
 Vous trouverez ci-dessous une liste des commandes SQL usuelles.
+Référez-vous aux annexes pour plus d'inforations ou des éclaircissements.
 
 
 ## Commantaires en SQL
@@ -12,14 +13,24 @@ Vous trouverez ci-dessous une liste des commandes SQL usuelles.
 
 ## Gérer des bases de données et des tables
 
-| Commande                              |                                        Usages |
-| :------------------------------------ | --------------------------------------------: |
-| `CREATE DATABASE db_name`             |                      Crée une base de données |
-| `DROP DATABASE db_name`               |                  Supprime une base de données |
-| `CREATE TABLE table_name`             |        Crée une table dans la base de données |
-| `ALTER TABLE table_name instruction`  |                             Modifie une table |
-| `TRUNCATE TABLE table_name`           |       Supprime toutes les données d'une table |
-| `DROP TABLE table_name`               |   Supprime une table dans une base de données |
+| Commande                              |                                       Usages |
+| :------------------------------------ | -------------------------------------------: |
+| `CREATE DATABASE db_name`             |                     Crée une base de données |
+| `DROP DATABASE db_name`               |                 Supprime une base de données |
+| `CREATE TABLE table_name`             |       Crée une table dans la base de données |
+| `ALTER TABLE table_name instruction`  |                            Modifie une table |
+| `TRUNCATE TABLE table_name`           |      Supprime toutes les données d'une table |
+| `DROP TABLE table_name`               |  Supprime une table dans une base de données |
+
+
+## Instructions (avec ALTER TABLE)
+
+| Commande                                      |                Usages |
+| :-------------------------------------------- | --------------------: |
+| `ADD column column-def`                       |    Ajoute une colonne |
+| `DROP column`                                 |  Supprime une colonne |
+| `RENAME TO new-table-name`                    |     Renomme une table |
+| `RENAME old-column-name TO new-column-name`   |   Renomme une colonne |
 
 
 ## Gérer des données
@@ -110,14 +121,17 @@ END
 Ressources explicatives complémentaires
 
 
-## Gérer des données
+## Instructions
+
+![Document illustratif de la définition d'une colonne](./resources/column-def.png)  
+*Figuré : La définition d'une colonne*
 
 
 ## Joindre des requêtes
 
-![Document illustratif des différentes jointures possibles](./resources/sql-ensemble-union-300.png)
-![Document illustratif des différentes jointures possibles](./resources/sql-ensemble-intersect-300.png)
-![Document illustratif des différentes jointures possibles](./resources/sql-ensemble-minus-300.png)  
+![Document illustratif de l'utilisation de UNION](./resources/sql-ensemble-intersect-300.png)
+![Document illustratif de l'utilisation de INTERSECT](./resources/sql-ensemble-intersect-300.png)
+![Document illustratif de l'utilisation de MINUS](./resources/sql-ensemble-minus-300.png)  
 *Figurés : Les jointures de requêtes*
 
 ```sql
@@ -128,19 +142,19 @@ SELECT column1 FROM table1 UNION SELECT column2 FROM table1
 SELECT column1, column2 FROM table1
 ```
 
-## Données sélectionnables
+
+## Spécifications principales
 
 ![Document illustratif des différentes jointures possibles](./resources/SQL_Joins.png)  
 *Figuré : Les jointures de tables*
 
 
-## Spécifications principales
-
-
 ## Comparer des valeurs
 
+```SQL
+SELECT prenom FROM table WHERE prenom LIKE '_a%'
+```
 
-## Caractères génériques (utilisés avec `LIKE`)
-
-
-## 
+Par exemple, cette commande pourrait renvoyer des valeurs comme 'Marcel' et 'MA' 
+(sauf s'il est précisé qu'une colonne est sensible à la casse lors de sa création, ce qui est plutôt rare), 
+mais pas 'Albert' ou 'Anna'
