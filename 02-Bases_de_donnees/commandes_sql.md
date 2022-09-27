@@ -110,9 +110,6 @@ END
 Ressources explicatives complémentaires
 
 
-## Gérer des bases de données et des tables
-
-
 ## Gérer des données
 
 
