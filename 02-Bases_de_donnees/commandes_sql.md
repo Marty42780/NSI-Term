@@ -130,9 +130,9 @@ Ressources explicatives complémentaires
 ## Joindre des requêtes
 
 ![Document illustratif de l'utilisation de UNION](./resources/sql-ensemble-intersect-300.png)
-![Document illustratif de l'utilisation de INTERSECT](./resources/sql-ensemble-intersect-300.png)
-![Document illustratif de l'utilisation de MINUS](./resources/sql-ensemble-minus-300.png)  
-*Figurés : Les jointures de requêtes*
+![Document illustratif de l'utilisation de INTERSECT](./resources/sql-ensemble-minus-300.png)
+![Document illustratif de l'utilisation de MINUS](./resources/sql-ensemble-union-300.png)  
+*Figurés : Les jointures de requêtes, de gauche à droite : INTERSECT, MINUS, UNION*
 
 ```sql
 SELECT column1 FROM table1 UNION SELECT column2 FROM table1
