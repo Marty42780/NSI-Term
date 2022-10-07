@@ -1,5 +1,3 @@
-Burger = ["Pain", "Cheese", "Steak", "Salade", "Tomate", "Onions", ["Ketchup", "Burger", "Creme"], "Pain"]
-
 def CREER_FILE_VIDE() -> list:
     return [None, 3, 0, None, None, None, None, None]
 
