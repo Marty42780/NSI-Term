@@ -30,10 +30,11 @@ def EST_PLEINE(P: list) -> bool:
     else:
         return False
 
-Nb_places = 5
-Pile = [None]*(Nb_places + 1)
 
 ''' 4.5.3 Implémentattion en python '''
+Nb_places = 5
+Pile = CREER_PILE_VIDE()
+
 Pile[0] = 1
 print(Pile)
 EMPILER(Pile, 2)
