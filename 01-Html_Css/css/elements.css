@@ -12,13 +12,13 @@
   --light-solid-text-color: #ececff;
 
   --accueil: #CD6155; /* POMEGRANATE */
-  --themes: #AF7AC5; /* AMETHYST */
-  --animaux: #5499c7; /* BELIZE HOLE */
-  --expose: #48C9B0; /* TURQUOISE */
-  --disable: #AAB7B8; /* CONCRETE */
-  --not_use_1: #52BE80; /* NEPHRITIS */
+  --themes1ere: #AF7AC5; /* AMETHYST */
+  --themesTerm: #5499c7; /* BELIZE HOLE */
+  --animaux: #48C9B0; /* TURQUOISE */
+  --expose: #52BE80; /* NEPHRITIS */
   --not_use_2: #F4D03F; /* SUNFLOWER */
   --not_use_3: #EB984E; /* CARROT */
+  --disable: #AAB7B8; /* CONCRETE */
 
   --main-box-shadow : inset 0 1px 1px 0 hsl(0deg 0% 100% / 15%),
   0 50px 100px -20px rgb(50 50 93 / 30%), 0 30px 60px -30px rgb(0 0 0 / 50%),

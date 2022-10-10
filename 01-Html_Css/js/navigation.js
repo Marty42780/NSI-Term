@@ -1,5 +1,6 @@
 try {if (acceuil[1] === "disable") {title = "Accueil"}} catch (e) {acceuil = ["index.html", "enable"]}    
-try {if (themes[1] === "disable") {title = "Thèmes"}} catch (e) {themes = ["themes.html", "enable"]}    
+try {if (themes1ere[1] === "disable") {title = "Thèmes 1ère"}} catch (e) {themes1ere = ["themes1ere.html", "enable"]}    
+try {if (themesTerm[1] === "disable") {title = "Thèmes Terminale"}} catch (e) {themesTerm = ["themesTerm.html", "enable"]}
 try {if (animaux[1] === "disable") {title = "Promenade des Animaux"}} catch (e) {animaux = ["animaux.html", "enable"]}  
 try {if (expose[1] === "disable") {title = "Exposé"}} catch (e) {expose = ["expose.html", "enable"]}
 
@@ -11,8 +12,11 @@ document.write(`
         <a href="` + acceuil[0] + `" class="` + acceuil[1] + ` accueil">
             <li>Accueil</li>
         </a>
-        <a href="` + themes[0] + `" class="` + themes[1] + ` themes">
-            <li>Thèmes</li>
+        <a href="` + themes1ere[0] + `" class="` + themes1ere[1] + ` themes1ere">
+            <li>Thèmes de 1ère</li>
+        </a>
+        <a href="` + themesTerm[0] + `" class="` + themesTerm[1] + ` themesTerm">
+            <li>Thèmes de Terminale</li>
         </a>
         <a href="` + animaux[0] + `" class="` + animaux[1] + ` animaux"> 
             <li>Animaux</li> 
@@ -27,13 +31,20 @@ document.write(`
 <div class="grid">
     <a href="` + acceuil[0] + `">
         <div class="` + acceuil[1] + ` accueil">
-            <img src="images/web-dev.png" alt="" />
+            <img src="images/peppapig.png" alt="" />
             <h2>Acceuil</h2>
             <h1>Introduction</h1>
         </div>
     </a>
-    <a href="` + themes[0] + `">
-        <div class="` + themes[1] + ` themes">
+    <a href="` + themes1ere[0] + `">
+        <div class="` + themes1ere[1] + ` themes1ere">
+            <img src="01-Html_Css/images/accueil-vscode_logo.png" alt="" />
+            <h2>Thèmes</h2>
+            <h1>Thèmes de NSI</h1>
+        </div>
+    </a>
+    <a href="` + themesTerm[0] + `">
+        <div class="` + themesTerm[1] + ` themesTerm">
             <img src="images/binaire.png" alt="" />
             <h2>Thèmes</h2>
             <h1>Thèmes de NSI</h1>

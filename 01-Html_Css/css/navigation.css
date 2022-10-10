@@ -40,8 +40,11 @@
 .enable.accueil {
   background-color: var(--accueil);
 }
-.enable.themes {
-  background-color: var(--themes);
+.enable.themes1ere {
+  background-color: var(--themes1ere);
+}
+.enable.themeTerm {
+  background-color: var(--themesTerm); 
 }
 .enable.animaux {
   background-color: var(--animaux);
