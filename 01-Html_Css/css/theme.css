@@ -48,6 +48,20 @@ ul:not(#top-bar ul){
   padding-left: 25px;
 }
 
+/* ------------------------------- Div de Code ------------------------------ */
+div.code {
+  background-color: rgb(35, 39, 46);
+  box-shadow: var(--black-box-shadow);
+  color: var(--light-solid-text-color);
+  height: 500px;
+  overflow: hidden;
+  box-shadow: inset 10px 10px 10px 10px #ffffff;
+}
+div.code.active {
+  height: auto;
+}
+
+
 /* --------- Div : Autre élements (pdf, images) ----------*/
 iframe.pdf {
   margin: 1em 1em 1em 2em;

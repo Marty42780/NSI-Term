@@ -22,7 +22,7 @@ document.write(`
             <li>Animaux</li> 
         </a>
         <a href="` + expose[0] + `" class="` + expose[1] + ` expose"> 
-            <li>Exposé</li> 
+            <li>Exposés</li> 
         </a>
         <button id="menuButton" onclick="showMenu()">Tout voir</button>
     </ul>
@@ -31,23 +31,23 @@ document.write(`
 <div class="grid">
     <a href="` + acceuil[0] + `">
         <div class="` + acceuil[1] + ` accueil">
-            <img src="images/peppapig.png" alt="" />
+            <img src="images/menu/accueil.png" alt="" />
             <h2>Acceuil</h2>
             <h1>Introduction</h1>
         </div>
     </a>
     <a href="` + themes1ere[0] + `">
         <div class="` + themes1ere[1] + ` themes1ere">
-            <img src="01-Html_Css/images/accueil-vscode_logo.png" alt="" />
+            <img src="images/menu/themes1ere.png" alt="" />
             <h2>Thèmes</h2>
-            <h1>Thèmes de NSI</h1>
+            <h1>Classe de Première</h1>
         </div>
     </a>
     <a href="` + themesTerm[0] + `">
         <div class="` + themesTerm[1] + ` themesTerm">
-            <img src="images/binaire.png" alt="" />
+            <img src="images/menu/themesTerm.jpg" alt="" />
             <h2>Thèmes</h2>
-            <h1>Thèmes de NSI</h1>
+            <h1>Classe de Terminale</h1>
         </div>
     </a>
     <a href="` + animaux[0] + `">
@@ -59,9 +59,9 @@ document.write(`
     </a>
     <a href="` + expose[0] + `">
         <div class="` + expose[1] + ` expose">
-            <img src="images/algobox-dev.png" alt="" />
-            <h2>Exposé</h2>
-            <h1>Les languages de programation</h1>
+            <img src="images/menu/expose.png" alt="" />
+            <h2>Exposés</h2>
+            <h1>Oraux et Présentations</h1>
         </div>
     </a>
 </div>
