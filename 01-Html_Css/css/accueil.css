@@ -97,14 +97,26 @@ div.doc {
 
 
 /* ---------------------------------- Demo ---------------------------------- */
-
 #demo {
   width: 100%;
   flex-direction: column;
   background-color: #0d1117;
 }
-#demo h2, h4, p, ul {
-  color: var(--light-solid-text-color)
+#demo h2 {
+  background: -webkit-linear-gradient(-70deg, #359dda 0%, #a011c4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+}
+#demo h4, p, ul {
+  color: var(--light-solid-text-color)  
+}
+#demo p img{
+  height: 15px;
 }
 
 /* -------------------------------------------------------------------------- */

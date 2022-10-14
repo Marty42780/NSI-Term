@@ -3,7 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 /* --------------------------------- Textes --------------------------------- */
-h1, h3, p, ul {
+h1:not(.code h1), h3:not(.code h3), p:not(.code p), ul:not(.code ul) {
   color: var(--dark-solid-text-color)
 }
 
@@ -25,7 +25,7 @@ h1:not(#top-bar h1) { /*Titre des activtés */
 h2 { /* Titre des elements */
   margin: 2em 2em 1em 2em;
 }
-/* ---------------- Zones dans les themes (ex: part1, part2) ---------------- */
+/* ---------------- Zones dans les themes (ex: partp1, partp2) ---------------- */
 .t-part {
   display: flex;
   flex-direction: row;
@@ -54,13 +54,19 @@ div.code {
   box-shadow: var(--black-box-shadow);
   color: var(--light-solid-text-color);
   height: 500px;
-  overflow: hidden;
-  box-shadow: inset 10px 10px 10px 10px #ffffff;
+  overflow: auto;
 }
-div.code.active {
-  height: auto;
+.code td {
+  border: 1px solid #333;
 }
-
+.code em {
+  color: blanchedalmond;
+  font-family: monospace;
+  font-style: normal;
+}
+.code td:last-child {
+  text-align: right;
+}
 
 /* --------- Div : Autre élements (pdf, images) ----------*/
 iframe.pdf {
@@ -82,105 +88,105 @@ img:not(#menuDiv img) {
 /* -------------------------------------------------------------------------- */
 
 /* --------------------------------- Thème 1 -------------------------------- */
-#t1 {
+#tp1, #tt1 {
   background-color: rgb(255, 158, 158);
 }
 @media screen and (min-width: 1300px) {
-  .t1-pdf {
+  .tp1-pdf {
     width: 72%;
   }
-  #t1 img.girafe {
+  #tp1 img.girafe {
     height: 650px;
     width: 20%;
   }
 }
 @media screen and (max-width: 1300px) {
-  .t1-pdf {
+  .tp1-pdf {
     width: 95%;
   }
-  #t1 img.girafe {
+  #tp1 img.girafe {
     display: none;
   }
 }
 
 /* --------------------------------- Thème 2 -------------------------------- */
-#t2 {
+#tp2 {
   background-color: rgb(219, 205, 126);
 }
-#t2 div.doc {
+#tp2 div.doc {
   align-items: center;
 }
 
 /* --------------------------------- Thème 3 -------------------------------- */
-#t3 {
+#tp3 {
   background-color: rgb(80, 209, 170);
 }
-#t3 img.elephant {
+#tp3 img.elephant {
   border-radius: 100%;
 }
 
 /* --------------------------------- Thème 4 -------------------------------- */
-#t4 {
+#tp4 {
   background-color: rgb(80, 166, 209);
 }
-#t4 div.doc {
+#tp4 div.doc {
   margin: 1em 0 1em 2em;
   width: 40em;
 }
-#t4 img {
+#tp4 img {
   height: 441px;
 }
-.t4-pdf {
+.tp4-pdf {
   width: 40%;
 }
 
 /* --------------------------------- Thème 5 -------------------------------- */
-#t5 {
+#tp5 {
   background-color: rgb(80, 110, 209);
 }
-#t5 div.doc {
+#tp5 div.doc {
   width: 60em;
 }
-#t5 img {
+#tp5 img {
   width: 40%;
 }
-#t5 div div img { /* Schema dans la div.doc */
+#tp5 div div img { /* Schema dans la div.doc */
   width: 70%;
 }
-.t5-pdf {
+.tp5-pdf {
   width: 45%;
 }
 
 /* --------------------------------- Thème 7 -------------------------------- */
-#t7 {
+#tp7 {
   background-color: rgb(151, 80, 209);
 }
-#t7 img.part1 {
+#tp7 img.part1 {
   width: 27%;
 }
-#t7 img.part2 {
+#tp7 img.partp2 {
   height: 300px;
 }
 
 
 /* --------------------------------- Thème 8 -------------------------------- */
-#t8 {
+#tp8 {
   background-color: rgb(218, 104, 184);
 }
-#t8 div.doc {
+#tp8 div.doc {
   width: 50%;
 }
-#t8 img.lion {
+#tp8 img.lion {
   width: 27%;
 }
-#t8 img.part2 {
+#tp8 img.partp2 {
   width: 90%;
 }
 
 /* --------------------------------- Thème 9 -------------------------------- */
-#t9 {
+#tp9 {
   background-color: rgb(223, 213, 83);
 }
-#t9 img {
+#tp9 img {
   width: 27%;
 }
