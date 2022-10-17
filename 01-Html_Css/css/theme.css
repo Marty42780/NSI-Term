@@ -55,6 +55,11 @@ div.code {
   color: var(--light-solid-text-color);
   height: 500px;
   overflow: auto;
+  margin-bottom: 0; /* pour le after 'scroll' */
+}
+.code.scrolled {
+  scroll
+  transition: 2s all ease;
 }
 .code td {
   border: 1px solid #333;
@@ -66,6 +71,15 @@ div.code {
 }
 .code td:last-child {
   text-align: right;
+}
+.code-scroll-invite {
+  display: flex;
+  content: "↓ scroll";
+  padding: 10px;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+  
 }
 
 /* --------- Div : Autre élements (pdf, images) ----------*/
@@ -107,6 +121,12 @@ img:not(#menuDiv img) {
   #tp1 img.girafe {
     display: none;
   }
+}
+#tt1 .code {
+  margin-bottom: 0;
+}
+#tt1 .t-part {
+  flex-direction: column;
 }
 
 /* --------------------------------- Thème 2 -------------------------------- */
