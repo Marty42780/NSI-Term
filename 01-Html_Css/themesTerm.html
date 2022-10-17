@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/elements.css">
+  <title>Thèmes - NSI Martin Pasquier</title>
+</head>
+
+<body>
+  <!-- IMPORT OF #top-bat AND #menuDiv -->
+  <script>themesTerm = ["#", "disable"];</script>
+  <script src="js/navigation.js"></script>
+  <script src="js/nav-script.js.js"></script>
+  <script src="js/themes.js"></script>
+  <!-- Themes -->
+  <div id="tt1" class="t">
+    <h3>Thème 1</h3>
+    <h1>Bases de données</h1>
+    <div class="t-part">
+      
+      <div class="doc code">
+        <h1>Header 1</h1>
+        <p>
+          Vous trouverez ci-dessous une liste des commandes SQL usuelles.
+          Référez-vous aux annexes pour plus d'inforations ou des éclaircissements.
+        </p>
+        <h2>Commantaires en SQL</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Commande</th>
+              <th>Usages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em> -- text</em></td>
+              <td>Commantaire</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Gérer des bases de données et des tables</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Commande</th>
+              <th>Usages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>CREATE DATABASE db_name</em></td>
+              <td>Crée une base de données</td>
+            </tr>
+            <tr>
+              <td><em>DROP DATABASE db_name</em></td>
+              <td>Supprime une base de données</td>
+            </tr>
+            <tr>
+              <td><em>CREATE TABLE table_name</em></td>
+              <td>Crée une table dans la base de données</td>
+            </tr>
+            <tr>
+              <td><em>ALTER TABLE table_name instruction	</em></td>
+              <td>Modifie une table</td>
+            </tr>
+            <tr>
+              <td><em>TRUNCATE TABLE table_name</em></td>
+              <td>Supprime toutes les données d'une table</td>
+            </tr>
+            <tr>
+              <td><em>DROP TABLE table_name</em></td>
+              <td>Supprime une table dans une base de données</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Instructions (avec ALTER TABLE)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Commande</th>
+              <th>Usages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>ADD column column-def</em></td>
+              <td>Ajoute une colonne</td>
+            </tr>
+            <tr>
+              <td><em>DROP column</em></td>
+              <td>Supprime une colonne</td>
+            </tr>
+            <tr>
+              <td><em>RENAME TO new-table-name</em></td>
+              <td>Renomme une table</td>
+            </tr>
+            <tr>
+              <td><em>RENAME old-column-name TO new-column-name</em></td>
+              <td>Renomme une colonne</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Gérer des données</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Commande</th>
+              <th>Usages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>SELECT [DISTINCT] data [AS alias] FROM table</em></td>
+              <td>Affiche ou Sélectionne [sans doublons] [sous un alias]</td>
+            </tr>
+            <tr>
+              <td><em>INSERT INTO table VALUES ('value1', 'value2', ...)</em></td>
+              <td>Insère des lignes</td>
+            </tr>
+            <tr>
+              <td><em>UPDATE table SET column = 'value'</em></td>
+              <td>Change des valeurs</td>
+            </tr>
+            <tr>
+              <td><em>DELETE FROM table</em></td>
+              <td>Efface des valeurs</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Joindre des requêtes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Commande</th>
+              <th>Usages</th>
+              <th>Figuré</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>UNION [ALL]</em></td>
+              <td>Union de 2 ensembles [avec doublons]</td>
+              <td>Figuré 1</td>
+            </tr>
+            <tr>
+              <td><em>INTERSECT</em></td>
+              <td>Intersection de 2 ensembles</td>
+              <td>Figuré 2</td>
+            </tr>
+            <tr>
+              <td><em>EXCEPT / MINUS</em></td>
+              <td>Sélection d’un ensemble avec exception</td>
+              <td>Figuré 3</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Données sélectionnables</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Commande</th>
+              <th>Usages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>*</em></td>
+              <td>Toutes les données</td>
+            </tr>
+            <tr>
+              <td><em>column</em></td>
+              <td>Les valeurs d'un champ</td>
+            </tr>
+            <tr>
+              <td><em>COUNT (data)</em></td>
+              <td>Le nombre des valeurs</td>
+            </tr>
+            <tr>
+              <td><em>MIN (data)</em></td>
+              <td>Le minimum de valeurs</td>
+            </tr>
+            <tr>
+              <td><em>MAX (data)</em></td>
+              <td>Le maximum des valeurs</td>
+            </tr>
+            <tr>
+              <td><em>AVG (data)</em></td>
+              <td>La moyenne des valeurs</td>
+            </tr>
+            <tr>
+              <td><em>SUM (data)</em></td>
+              <td>La somme des valeurs</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Spécifications principales</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Commande</th>
+              <th>Usages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>table1 JOIN table2 USING (column)</em></td>
+              <td>Joint deux tables avec une clé étrangère</td>
+            </tr>
+            <tr>
+              <td><em>WHERE condition</em></td>
+              <td>Filtre des données sans fonction</td>
+            </tr>
+            <tr>
+              <td><em>GROUP BY column [WITH ROLLUP]</em></td>
+              <td>Regroupe les données [ajoute une ligne de totaux]</td>
+            </tr>
+            <tr>
+              <td><em>HAVING function(column) operator value</em></td>
+              <td>Filtre des données avec une fonctions</td>
+            </tr>
+            <tr>
+              <td><em>ORDER BY column ASC / DESC</em></td>
+              <td>Ordonne des données (croissant/décroissant)</td>
+            </tr>
+            <tr>
+              <td><em>LIMIT count [OFFSET start]</em></td>
+              <td>Limite le nombre de résultats [décalés de start valeurs]</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Comparer des valeurs</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Commande</th>
+              <th>Usages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em><</em></td>
+              <td>Compare par infériorité stricte</td>
+            </tr>
+            <tr>
+              <td><em>></em></td>
+              <td>Compare par supériorité stricte</td>
+            </tr>
+            <tr>
+              <td><em><=</em></td>
+              <td>Compare par infériorité large</td>
+            </tr>
+            <tr>
+              <td><em>>=</em></td>
+              <td>Compare par supériorité large</td>
+            </tr>
+            <tr>
+              <td><em><></em></td>
+              <td>Compare par non-égalité</td>
+            </tr>
+            <tr>
+              <td><em>=</em></td>
+              <td>Compare par égalité</td>
+            </tr>
+            <tr>
+              <td><em>BETWEEN 'value1' AND 'value2'</em></td>
+              <td>Vérifie qu'une valeur est dans un intervalle</td>
+            </tr>
+            <tr>
+              <td><em>LIKE</em></td>
+              <td>Compare par une chaîne de caractères modèle</td>
+            </tr>
+            <tr>
+              <td><em>AND</em></td>
+              <td>Vérifie que plusieurs conditions sont vraies</td>
+            </tr>
+            <tr>
+              <td><em>OR</em></td>
+              <td>Vérifie qu'au moins une condition est vraie</td>
+            </tr>
+            <tr>
+              <td><em>IN ('value1', 'value2', ...)</em></td>
+              <td>Vérifie qu'une valeur est dans un set de donnée</td>
+            </tr>
+            <tr>
+              <td><em>IS [NOT] NULL</em></td>
+              <td>Vérifie qu'une valeur est [non] NULL</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Caractères génériques (utilisés avec `LIKE`)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Commande</th>
+              <th>Usages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>%</em></td>
+              <td>Zéro, un ou plusieurs caractères jokers</td>
+            </tr>
+            <tr>
+              <td><em>_</em></td>
+              <td>Un seul caractère joker obligatoire</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div onclick="scroll_code(0)" class="code-scroll-invite">↓ scroll</div>
+    </div>
+  </div>
+</body>
+
+</html>
