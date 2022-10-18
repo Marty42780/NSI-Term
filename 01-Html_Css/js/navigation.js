@@ -28,43 +28,48 @@ document.write(`
     </ul>
 </section>
 <div id="menuDiv">
-<div class="grid">
-    <a href="` + acceuil[0] + `">
-        <div class="` + acceuil[1] + ` accueil">
-            <img src="images/menu/accueil.png" alt="" />
-            <h2>Acceuil</h2>
-            <h1>Introduction</h1>
-        </div>
-    </a>
-    <a href="` + themes1ere[0] + `">
-        <div class="` + themes1ere[1] + ` themes1ere">
-            <img src="images/menu/themes1ere.png" alt="" />
-            <h2>Thèmes</h2>
-            <h1>Classe de Première</h1>
-        </div>
-    </a>
-    <a href="` + themesTerm[0] + `">
-        <div class="` + themesTerm[1] + ` themesTerm">
-            <img src="images/menu/themesTerm.jpg" alt="" />
-            <h2>Thèmes</h2>
-            <h1>Classe de Terminale</h1>
-        </div>
-    </a>
-    <a href="` + animaux[0] + `">
-        <div class="` + animaux[1] + ` animaux">
-            <img src="images/animaux/panda.jpg" alt="" />
-            <h2>Animaux</h2>
-            <h1>Promenade avec les animaux</h1>
-        </div>
-    </a>
-    <a href="` + expose[0] + `">
-        <div class="` + expose[1] + ` expose">
-            <img src="images/menu/expose.png" alt="" />
-            <h2>Exposés</h2>
-            <h1>Oraux et Présentations</h1>
-        </div>
-    </a>
-</div>
+    <div class="grid">
+        <a href="` + acceuil[0] + `">
+            <div class="` + acceuil[1] + ` accueil">
+                <img src="images/menu/accueil.png" alt="" />
+                <h2>Acceuil</h2>
+                <h1>Introduction</h1>
+            </div>
+        </a>
+        <a href="` + themes1ere[0] + `">
+            <div class="` + themes1ere[1] + ` themes1ere">
+                <img src="images/menu/themes1ere.png" alt="" />
+                <h2>Thèmes</h2>
+                <h1>Classe de Première</h1>
+            </div>
+        </a>
+        <a href="` + themesTerm[0] + `">
+            <div class="` + themesTerm[1] + ` themesTerm">
+                <img src="images/menu/themesTerm.jpg" alt="" />
+                <h2>Thèmes</h2>
+                <h1>Classe de Terminale</h1>
+            </div>
+        </a>
+        <a href="` + animaux[0] + `">
+            <div class="` + animaux[1] + ` animaux">
+                <img src="images/animaux/panda.jpg" alt="" />
+                <h2>Animaux</h2>
+                <h1>Promenade avec les animaux</h1>
+            </div>
+        </a>
+        <a href="` + expose[0] + `">
+            <div class="` + expose[1] + ` expose">
+                <img src="images/menu/expose.png" alt="" />
+                <h2>Exposés</h2>
+                <h1>Oraux et Présentations</h1>
+            </div>
+        </a>
+        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+            <div class="amongus">
+                <img src="https://media.tenor.com/P8KjYDcd7JwAAAAM/among-us-among-drip.gif" style="background-color: white;">
+            </div>
+        </a>
+    </div>
 </div>
 `);
 

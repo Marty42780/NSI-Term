@@ -57,10 +57,6 @@ div.code {
   overflow: auto;
   margin-bottom: 0; /* pour le after 'scroll' */
 }
-.code.scrolled {
-  scroll
-  transition: 2s all ease;
-}
 .code td {
   border: 1px solid #333;
 }
@@ -79,7 +75,6 @@ div.code {
   background-color: white;
   border-radius: 0 0 10px 10px;
   cursor: pointer;
-  
 }
 
 /* --------- Div : Autre élements (pdf, images) ----------*/
@@ -125,17 +120,24 @@ img:not(#menuDiv img) {
 #tt1 .code {
   margin-bottom: 0;
 }
-#tt1 .t-part {
+#tt1 .t-part:nth-child(4) {
   flex-direction: column;
+}
+#tt1 img { /* ecureuil */
+  width: 20%;
+}
+#tt1 .t-part:first-child div.doc {
+  width: 50%;
 }
 
 /* --------------------------------- Thème 2 -------------------------------- */
-#tp2 {
+#tp2, #tt2 {
   background-color: rgb(219, 205, 126);
 }
 #tp2 div.doc {
   align-items: center;
 }
+
 
 /* --------------------------------- Thème 3 -------------------------------- */
 #tp3 {
