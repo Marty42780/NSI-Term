@@ -7,7 +7,11 @@ try {if (expose[1] === "disable") {title = "Exposé"}} catch (e) {expose = ["exp
 document.write(`
 <link rel="stylesheet" href="css/navigation.css" />
 <section id="top-bar">
-    <h1>NSI - ` + title + `</h1>
+    
+    <div>
+        <img src="images/totoro.png" alt="" style="height: 50px;">
+        <h1>NSI - ` + title + `</h1>
+    </div>
     <ul id="menu">
         <a href="` + acceuil[0] + `" class="` + acceuil[1] + ` accueil">
             <li>Accueil</li>
@@ -22,7 +26,7 @@ document.write(`
             <li>Animaux</li> 
         </a>
         <a href="` + expose[0] + `" class="` + expose[1] + ` expose"> 
-            <li>Exposés</li> 
+            <li>Exposés (vide)</li> 
         </a>
         <button id="menuButton" onclick="showMenu()">Tout voir</button>
     </ul>

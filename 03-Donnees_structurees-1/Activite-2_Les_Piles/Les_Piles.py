@@ -2,7 +2,7 @@ P = [0, 1, 2, 3, None, None]
 
 ''' 4.3 Autres  exemples d’opérations sur les piles '''
 
-def EMPILER(P:list,x) -> list:
+def EMPILER(P:list,x):
     for i in range(len(P)):
         if P[i] == None:
             P[i] = x

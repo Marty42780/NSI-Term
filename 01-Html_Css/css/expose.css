@@ -1,0 +1,18 @@
+#grid-principale {
+    margin: 2em;
+    display: grid;
+    grid-template: auto / 30% 70%; 
+    gap: 1em;
+
+}
+#grid-principale img {
+    width: 100%;
+    border-radius: 30px;
+    grid-column-start: 1;
+}
+#grid-principale iframe {
+    grid-column: 2;
+    grid-row: 1 / 6;
+    width: 100%;
+    height: 100%;
+}

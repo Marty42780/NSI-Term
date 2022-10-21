@@ -124,7 +124,7 @@ img:not(#menuDiv img) {
   flex-direction: column;
 }
 #tt1 img { /* ecureuil */
-  width: 20%;
+  width: 12%;
 }
 #tt1 .t-part:first-child div.doc {
   width: 50%;
@@ -137,7 +137,10 @@ img:not(#menuDiv img) {
 #tp2 div.doc {
   align-items: center;
 }
-
+#tt2 img:first-child {
+  width: 22%;
+  max-height: 10%;
+}
 
 /* --------------------------------- Thème 3 -------------------------------- */
 #tp3 {

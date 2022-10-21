@@ -9,9 +9,14 @@
   display: flex;
   align-items: center;
 }
-#top-bar h1 {
-  margin: 0;
-  margin-left: 1.5em;
+#top-bar div:first-child {
+  display: flex;
+  margin: 0 0 0 1em;
+  align-items: center;
+  flex-direction: row;
+}
+#top-bar div:first-child img {
+  margin-right: 1em;
 }
 #menu {
   margin: 0;
