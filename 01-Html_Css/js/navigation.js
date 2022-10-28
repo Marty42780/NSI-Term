@@ -1,4 +1,4 @@
-try {if (acceuil[1] === "disable") {title = "Accueil"}} catch (e) {acceuil = ["index.html", "enable"]}    
+try {if (accueil[1] === "disable") {title = "Accueil"}} catch (e) {accueil = ["index.html", "enable"]}    
 try {if (themes1ere[1] === "disable") {title = "Thèmes 1ère"}} catch (e) {themes1ere = ["themes1ere.html", "enable"]}    
 try {if (themesTerm[1] === "disable") {title = "Thèmes Terminale"}} catch (e) {themesTerm = ["themesTerm.html", "enable"]}
 try {if (animaux[1] === "disable") {title = "Promenade des Animaux"}} catch (e) {animaux = ["animaux.html", "enable"]}  
@@ -13,7 +13,7 @@ document.write(`
         <h1>NSI - ` + title + `</h1>
     </div>
     <ul id="menu">
-        <a href="` + acceuil[0] + `" class="` + acceuil[1] + ` accueil">
+        <a href="` + accueil[0] + `" class="` + accueil[1] + ` accueil">
             <li>Accueil</li>
         </a>
         <a href="` + themes1ere[0] + `" class="` + themes1ere[1] + ` themes1ere">
@@ -26,17 +26,17 @@ document.write(`
             <li>Animaux</li> 
         </a>
         <a href="` + expose[0] + `" class="` + expose[1] + ` expose"> 
-            <li>Exposés (vide)</li> 
+            <li>Exposés</li> 
         </a>
         <button id="menuButton" onclick="showMenu()">Tout voir</button>
     </ul>
 </section>
 <div id="menuDiv">
     <div class="grid">
-        <a href="` + acceuil[0] + `">
-            <div class="` + acceuil[1] + ` accueil">
+        <a href="` + accueil[0] + `">
+            <div class="` + accueil[1] + ` accueil">
                 <img src="images/menu/accueil.png" alt="" />
-                <h2>Acceuil</h2>
+                <h2>Accueil</h2>
                 <h1>Introduction</h1>
             </div>
         </a>
