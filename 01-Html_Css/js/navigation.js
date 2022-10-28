@@ -1,9 +1,13 @@
-try {if (accueil[1] === "disable") {title = "Accueil"}} catch (e) {accueil = ["index.html", "enable"]}    
-try {if (themes1ere[1] === "disable") {title = "Thèmes 1ère"}} catch (e) {themes1ere = ["themes1ere.html", "enable"]}    
-try {if (themesTerm[1] === "disable") {title = "Thèmes Terminale"}} catch (e) {themesTerm = ["themesTerm.html", "enable"]}
-try {if (animaux[1] === "disable") {title = "Promenade des Animaux"}} catch (e) {animaux = ["animaux.html", "enable"]}  
-try {if (expose[1] === "disable") {title = "Exposé"}} catch (e) {expose = ["expose.html", "enable"]}
-
+try { if (accueil[1] === "disable") { title = "Accueil" } } catch (e) { accueil = ["index.html", "enable"] }
+try { if (themes1ere[1] === "disable") { title = "Thèmes 1ère" } } catch (e) { themes1ere = ["themes1ere.html", "enable"] }
+try { if (themesTerm[1] === "disable") { title = "Thèmes Terminale" } } catch (e) { themesTerm = ["themesTerm.html", "enable"] }
+try { if (animaux[1] === "disable") { title = "Promenade des Animaux" } } catch (e) { animaux = ["animaux.html", "enable"] }
+try { if (expose[1] === "disable") { title = "Exposé" } } catch (e) { expose = ["expose.html", "enable"] }
+if (
+    window.location.href.includes("localhost") === true, window.location.href.includes("127.0.0.1") === true
+) {
+    LocalhostStatue = "<a><b style=\"color: rgb(201, 16, 53);\">You are in Dev Mode</b></a>"
+} else { LocalhostStatue = "" }
 document.write(`
 <link rel="stylesheet" href="css/navigation.css" />
 <section id="top-bar">
@@ -28,6 +32,7 @@ document.write(`
         <a href="` + expose[0] + `" class="` + expose[1] + ` expose"> 
             <li>Exposés</li> 
         </a>
+        ` + LocalhostStatue + `
         <button id="menuButton" onclick="showMenu()">Tout voir</button>
     </ul>
 </section>
@@ -69,7 +74,7 @@ document.write(`
             </div>
         </a>
         <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
-            <div class="amongus">
+            <div class="amongus enable">
                 <img src="https://media.tenor.com/P8KjYDcd7JwAAAAM/among-us-among-drip.gif" style="background-color: white;">
             </div>
         </a>

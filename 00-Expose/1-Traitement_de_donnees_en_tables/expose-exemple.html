@@ -1,33 +1,114 @@
-<script>
-    var retards = []
-    let apiCallSncf = function (city) {
-        let url = "https://api.sncf.com/v1/coverage/sncf/disruptions?from_datetime=20220916T000000&until%20=%7Bdatetime%7D&count=50&";
-        var headers = new Headers({ "Authorization": "e938cc91-59c0-4214-ae07-f6f2352e6145" });
-        
-        // https://playground.navitia.io/play.html?request=https%3A%2F%2Fapi.sncf.com%2Fv1%2Fcoverage%2Fsncf%2Fdisruptions%3Fcount%1%26since%3D20220906T094820%26until%3D%257Bdatetime%257D%26
-    
-        fetch(url, { headers: headers })
-            .then((response) =>
-                response.json().then((data) => {
-    
-                    console.log(data);
-                    for ( let element of data.disruptions ) {
-                        if ( element.severity.effect === "SIGNIFICANT_DELAYS", element.status === "past" ) { retards.push(element) }
-                    }
-                    console.log(retards);
-                    for ( let element of retards ) {
-                        document.body.innerHTML += '<p>Retard à ' + element.application_periods[0].end;
-                    }
-                })
-            )
-            .catch((err) => {
-                console.log("Erreur : " + err);
-            }
-        );
-    }
-    
-    console.log(retards)</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script>
+      var retards = [];
+      let apiCallSncf = function (city) {
+        let url =
+          "https://api.sncf.com/v1/coverage/sncf/disruptions?from_datetime=20220916T000000&until%20=%7Bdatetime%7D&count=10";
+        var headers = new Headers({
+          Authorization: "e938cc91-59c0-4214-ae07-f6f2352e6145",
+        });
 
-<button onclick="apiCallSncf()">
-    Appeler L'api
-</button>
+        fetch(url, { headers: headers })
+          .then((response) =>
+            response.json().then((data) => {
+              console.log(data);
+              for (let element of data.disruptions) {
+                if (
+                  (element.severity.effect === "SIGNIFICANT_DELAYS",
+                  element.status === "past")
+                ) {
+                  retards.push(element);
+                }
+              }
+              console.log(retards);
+              for (let element of retards) {
+                document.body.innerHTML +=
+                  "<p>Retard à " + element.application_periods[0].end.slice(9,11) + ":" + element.application_periods[0].end.slice(11,13)
+              }
+            })
+          )
+          .catch((err) => {
+            console.log("Erreur : " + err);
+          });
+      };
+
+      console.log(retards);
+    </script>
+    <style>
+      #adresse p {
+        display: inline;
+        font-family: consolas, monospace;
+      }
+      #adresse table {
+        text-align: center
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemple concret avec l'API de la SNCF</h1>
+    <p>
+      La SNCF met à disposition des développeurs une api. Elle est accessible à
+      tous et est gratuite. (<a href="https://www.digital.sncf.com/"
+        >Site de l'api</a>)
+    </p>
+    <p>
+      L'objectif est de récupérer les 10 derniers retards sur tout le réseau de la SNCF.
+    </p>
+    <p>La requête utilisé est la suivante :</p>
+    <div id="adresse">
+      <b>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <p style="color: red">https://</p>
+              </td>
+              <td>
+                <p style="color: rgb(5, 180, 5)">api.sncf.com</p>
+              </td>
+              <td>
+                <p style="color: blue">/v1</p>
+              </td>
+              <td>
+                <p style="color: darkturquoise">/coverage/sncf</p>
+              </td>
+              <td>
+                <p style="color: magenta">/disruptions</p>
+              </td>
+              <td>
+                <p style="color: orange">?from_datetime=20220916T000000</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="color: red">Protocole</p>
+              </td>
+              <td>
+                <p style="color: rgb(5, 180, 5)">Domaine</p>
+              </td>
+              <td>
+                <p style="color: blue">Version de l'api</p>
+              </td>
+              <td>
+                <p style="color: darkturquoise">réseau</p>
+              </td>
+              <td>
+                <p style="color: magenta">retards</p>
+              </td>
+              <td>
+                <p style="color: orange">intervalle de recherche</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </b>
+    </div>
+    <br />
+    <button onclick="apiCallSncf()">Appeler L'api</button>
+    <h2>Résultats :</h2>
+  </body>
+</html>

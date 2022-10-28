@@ -86,7 +86,7 @@
 }
 
 #menuDiv {
-  display: none; /* Securité si le js ne se charge pas */
+  display: none; /* Sécurité si le js ne se charge pas */
   position: fixed;
   height: 100%;
   width: 100%;
@@ -119,7 +119,7 @@
 }
 #menuDiv .grid div:hover.enable {
   transform: scale(105%);
-  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+  transition: transform 0.3s ease;
 }
 #menuDiv .grid div img {
   width: 100%;

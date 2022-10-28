@@ -120,6 +120,9 @@ img:not(#menuDiv img) {
 #tt1 .code {
   margin-bottom: 0;
 }
+#tt1 .t-part:nth-child(3) .doc {
+  max-width: 1100px;
+}
 #tt1 .t-part:nth-child(4) {
   flex-direction: column;
 }

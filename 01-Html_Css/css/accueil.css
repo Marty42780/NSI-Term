@@ -107,7 +107,6 @@ div.doc {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
   font-size: 48px;
   line-height: 52px;
   letter-spacing: -0.03em;
@@ -143,6 +142,11 @@ div.doc {
   /* Text */
   font-size: 20px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.z3 a:hover div {
+  transform: scale(110%);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
 }
 .z3 a img {
   max-width: 10em;

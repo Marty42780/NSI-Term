@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="css/expose.css" />
-  <link rel="stylesheet" href="css/elements.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-  <title>Exposés - NSI Martin Pasquier</title>
-</head>
-<body>
-  <!-- IMPORT OF #top-bat AND #menuDiv -->
-  <script>expose = ["#", "disable"];</script>
-  <script src="js/navigation.js"></script>
-  <script src="js/nav-script.js"></script>
-  <!-- Exposés -->
-  <div id="grid-principale">
-    <img src="assets/expose/diapo1.svg" alt="">
-    <img src="assets/expose/diapo2.svg" alt="">
-    <img src="assets/expose/diapo3.svg" alt="">
-    <img src="assets/expose/diapo4.svg" alt="">
-    <img src="assets/expose/diapo5.svg" alt="">
-    <iframe src="assets/expose/expose-exemple.html" frameborder="0"></iframe>
-  </div>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/expose.css" />
+    <link rel="stylesheet" href="css/elements.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Exposés - NSI Martin Pasquier</title>
+  </head>
+  <body>
+    <!-- IMPORT OF #top-bat AND #menuDiv -->
+    <script>
+      expose = ["#", "disable"];
+    </script>
+    <script src="js/navigation.js"></script>
+    <script src="js/nav-script.js"></script>
+    <!-- Exposés -->
+    <div id="grid-principale">
+      <div class="doc">
+        <p>L'exposé porte est divisé en quatres parties :</p>
+        <ol>
+          <li>Définition d'une base de données</li>
+          <li>Le traitement des données dans les bases</li>
+          <li>L'usage de ces données</li>
+          <li>Exemple d'utilisation</li>
+        </ol>
+      </div>
+      <div><img src="assets/expose/diapo2.svg" alt="" /></div>
+      <div><img src="assets/expose/diapo3.svg" alt="" /></div>
+      <div><img src="assets/expose/diapo4.svg" alt="" /></div>
+      <div class="doc">
+        <p>Pour finir l'exposé, nous avons étudier un exemple concret : celui de l'api SNCF.</p>
+        <p>L'iframe ci-dessous contient l'exemple intéractif montrant le fonctionnement d'une REST API comme celle de la SNCF.</p>
+        <button onclick="document.getElementById('iframe-expose').contentWindow.location.reload();">Réinitialiser l'iframe</button>
+      </div>
+      <div class="doc"><iframe
+        id="iframe-expose"
+        src="../00-Expose/1-Traitement_de_donnees_en_tables/expose-exemple.html"
+        frameborder="0"
+      ></iframe></div>
+    </div>
+  </body>
 </html>
