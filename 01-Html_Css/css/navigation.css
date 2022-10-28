@@ -38,26 +38,44 @@
   font-weight: 500;
   transition: transform 0.3s ease;
 }
-#menu a:hover.enable {
+#menu a.enable:hover {
   transform: scale(110%);
-  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.enable.accueil {
+a.enable::after {
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	left: 5%;
+	width: 90%;
+	height: 2px;
+	transition: opacity 300ms, transform 300ms;
+}
+a.enable::after {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+a.enable:hover::after{
+	transform: scale(1);
+}
+
+.enable.accueil, .enable.accueil::after {
   background-color: var(--accueil);
 }
-.enable.themes1ere {
+.enable.themes1ere, .enable.themes1ere::after {
   background-color: var(--themes1ere);
 }
-.enable.themesTerm {
+.enable.themesTerm, .enable.themesTerm::after {
   background-color: var(--themesTerm); 
 }
-.enable.animaux {
+.enable.animaux, .enable.animaux::after {
   background-color: var(--animaux);
 }
-.enable.expose {
+.enable.expose, .enable.expose::after {
   background-color: var(--expose);
 }
-.disable {
+.disable, .disable::after {
   background-color: var(--disable);
   text-decoration: underline;
 }
@@ -84,6 +102,8 @@
   transform: scale(110%);
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
 }
+
+
 
 #menuDiv {
   display: none; /* Securité si le js ne se charge pas */

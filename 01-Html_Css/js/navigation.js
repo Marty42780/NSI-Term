@@ -4,7 +4,7 @@ try { if (themesTerm[1] === "disable") { title = "Thèmes Terminale" } } catch (
 try { if (animaux[1] === "disable") { title = "Promenade des Animaux" } } catch (e) { animaux = ["animaux.html", "enable"] }
 try { if (expose[1] === "disable") { title = "Exposé" } } catch (e) { expose = ["expose.html", "enable"] }
 if (
-    window.location.href.includes("localhost") === true, window.location.href.includes("127.0.0.1") === true
+    window.location.href.includes("localhost") === true || window.location.href.includes("127.0.0.1") === true
 ) {
     LocalhostStatue = "<a><b style=\"color: rgb(201, 16, 53);\">You are in Dev Mode</b></a>"
 } else { LocalhostStatue = "" }
