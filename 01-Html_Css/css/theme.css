@@ -3,26 +3,33 @@
 /* -------------------------------------------------------------------------- */
 
 /* --------------------------------- Textes --------------------------------- */
-h1:not(.code h1), h3:not(.code h3), p:not(.code p), ul:not(.code ul) {
-  color: var(--dark-solid-text-color)
+h1:not(.code h1),
+h3:not(.code h3),
+p:not(.code p),
+ul:not(.code ul) {
+  color: var(--dark-solid-text-color);
 }
 
-div.t { /* Div des themes */
+div.t {
+  /* Div des themes */
   display: flex;
   flex-direction: column;
   padding-bottom: 2em;
 }
-h3 { /* Numéros des activités */
+h3 {
+  /* Numéros des activités */
   margin-top: 2em;
   text-align: center;
   font-size: 22px;
 }
-h1:not(#top-bar h1) { /*Titre des activtés */
+h1:not(#top-bar h1) {
+  /*Titre des activtés */
   margin-top: 0;
   text-align: center;
   font-size: 28px;
 }
-h2 { /* Titre des elements */
+h2 {
+  /* Titre des elements */
   margin: 2em 2em 1em 2em;
 }
 /* ---------------- Zones dans les themes (ex: partp1, partp2) ---------------- */
@@ -34,17 +41,17 @@ h2 { /* Titre des elements */
   margin: 1em;
 }
 
-
 /* -------------------------- Div de Documentation -------------------------- */
 div.doc {
   margin: 1em;
 }
-p, ul:not(#top-bar ul){
+p,
+ul:not(#top-bar ul) {
   font-size: 15;
   line-height: 1.6;
   font-weight: 500;
 }
-ul:not(#top-bar ul){
+ul:not(#top-bar ul) {
   padding-left: 25px;
 }
 
@@ -90,14 +97,13 @@ img:not(#menuDiv img) {
   box-shadow: var(--main-box-shadow);
 }
 
-
-
 /* -------------------------------------------------------------------------- */
 /*                               Theme par theme                              */
 /* -------------------------------------------------------------------------- */
 
 /* --------------------------------- Thème 1 -------------------------------- */
-#tp1, #tt1 {
+#tp1,
+#tt1 {
   background-color: rgb(255, 158, 158);
 }
 @media screen and (min-width: 1300px) {
@@ -117,40 +123,43 @@ img:not(#menuDiv img) {
     display: none;
   }
 }
-#tt1 .code {
-  margin-bottom: 0;
-}
-#tt1 .t-part:nth-child(3) .doc {
-  max-width: 1100px;
-}
-#tt1 .t-part:nth-child(4) {
-  flex-direction: column;
-}
-#tt1 img { /* ecureuil */
-  width: 12%;
-}
-#tt1 .t-part:first-child div.doc {
-  width: 50%;
-}
 
 /* --------------------------------- Thème 2 -------------------------------- */
-#tp2, #tt2 {
+#tp2,
+#tt2 {
   background-color: rgb(219, 205, 126);
 }
 #tp2 div.doc {
   align-items: center;
 }
-#tt2 img:first-child {
-  width: 22%;
-  max-height: 10%;
+#tt2 .code {
+  margin-bottom: 0;
+}
+#tt2 .t-part:nth-child(3) .doc {
+  max-width: 1100px;
+}
+#tt2 .t-part:nth-child(4) {
+  flex-direction: column;
+}
+#tt2 img {
+  /* ecureuil */
+  width: 12%;
+}
+#tt2 .t-part:first-child div.doc {
+  width: 50%;
 }
 
 /* --------------------------------- Thème 3 -------------------------------- */
-#tp3 {
+#tp3,
+#tt3 {
   background-color: rgb(80, 209, 170);
 }
 #tp3 img.elephant {
   border-radius: 100%;
+}
+#tt3 img:first-child {
+  width: 22%;
+  max-height: 10%;
 }
 
 /* --------------------------------- Thème 4 -------------------------------- */
@@ -178,7 +187,8 @@ img:not(#menuDiv img) {
 #tp5 img {
   width: 40%;
 }
-#tp5 div div img { /* Schema dans la div.doc */
+#tp5 div div img {
+  /* Schema dans la div.doc */
   width: 70%;
 }
 .tp5-pdf {
@@ -195,7 +205,6 @@ img:not(#menuDiv img) {
 #tp7 img.partp2 {
   height: 300px;
 }
-
 
 /* --------------------------------- Thème 8 -------------------------------- */
 #tp8 {
