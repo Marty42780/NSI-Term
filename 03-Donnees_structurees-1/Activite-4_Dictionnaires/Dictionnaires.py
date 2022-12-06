@@ -1,3 +1,7 @@
+# ---------------------------------------------------------------------------- #
+#                                 Dictionnaires                                #
+# ---------------------------------------------------------------------------- #
+
 dicoprix = {"jambon":3, "sauce_tomate":1.5, 'poivrons':2, 'oignons':1, "champignons":2, "mozarella":1.5, "creme_fraiche":1.5, "chevre":2, "tomates":2, "lardons":2.5, 'saumon':4, 'merguez':3}
 
 def prixmoyen(dico: dict) -> float:

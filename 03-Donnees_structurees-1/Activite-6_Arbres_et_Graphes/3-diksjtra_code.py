@@ -1,18 +1,23 @@
-from queue import PriorityQueue
+# ---------------------------------------------------------------------------- #
+#                                   Dijkstra                                   #
+# ---------------------------------------------------------------------------- #
 
+from queue import PriorityQueue
 
 class Graph:
     def __init__(self, num_of_vertices):
         self.v = num_of_vertices
-        self.edges = [[-1 for i in range(num_of_vertices)] for j in range(num_of_vertices)]
+        self.edges = [[-1 for i in range(num_of_vertices)]
+                      for j in range(num_of_vertices)]
         self.visited = []
-        
+
     def add_edge(self, u, v, weight):
         self.edges[u][v] = weight
         self.edges[v][u] = weight
-        
+
+
 def dijkstra(g, d):
-    D = {v:float('inf') for v in range(g.v)}
+    D = {v: float('inf') for v in range(g.v)}
     D[d] = 0
 
     pq = PriorityQueue()
@@ -32,7 +37,8 @@ def dijkstra(g, d):
                         pq.put((new_cost, neighbor))
                         D[neighbor] = new_cost
     for vertex in range(len(D)):
-        print("La distance minimale du point", d, "au point", vertex, "est", D[vertex])
+        print("La distance minimale du point", d,
+              "au point", vertex, "est", D[vertex])
 
 
 g = Graph(9)
