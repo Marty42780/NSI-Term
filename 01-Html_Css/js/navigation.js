@@ -18,18 +18,23 @@ document.write(`
     </div>
     <ul id="menu">
         <a href="` + accueil[0] + `" class="` + accueil[1] + ` accueil">
+            <span class="material-symbols-outlined">home</span>
             <li>Accueil</li>
         </a>
         <a href="` + themes1ere[0] + `" class="` + themes1ere[1] + ` themes1ere">
+            <span class="material-symbols-outlined">rocket_launch</span>
             <li>Thèmes de 1ère</li>
         </a>
         <a href="` + themesTerm[0] + `" class="` + themesTerm[1] + ` themesTerm">
+            <span class="material-symbols-outlined">workspace_premium</span>
             <li>Thèmes de Terminale</li>
         </a>
         <a href="` + animaux[0] + `" class="` + animaux[1] + ` animaux"> 
+            <span class="material-symbols-outlined">cruelty_free</span>
             <li>Animaux</li> 
         </a>
-        <a href="` + expose[0] + `" class="` + expose[1] + ` expose"> 
+        <a href="` + expose[0] + `" class="` + expose[1] + ` expose">
+            <span class="material-symbols-outlined">campaign</span>
             <li>Exposés</li> 
         </a>
         ` + LocalhostStatue + `
