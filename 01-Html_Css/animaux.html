@@ -5,93 +5,161 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/animaux.css" />
-    <link rel="stylesheet" href="css/elements.css">
+    <link rel="stylesheet" href="css/elements.css" />
     <link rel="stylesheet" href="css/navigation.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <title>Animaux - NSI Martin Pasquier</title>
     <script src="js/animaux.js"></script>
   </head>
   <body>
     <!-- IMPORT OF #top-bat AND #menuDiv -->
-    <script>animaux = ["#", "disable"];</script>
+    <script>
+      animaux = ["#", "disable"];
+    </script>
     <script src="js/navigation.js"></script>
     <script src="js/nav-script.js.js"></script>
     <!-- Animaux -->
     <div class="content">
       <div class="animaux-grid">
-        <div id="product"> <!-- Chameau -->
+        <div id="product">
           <section class="images">
-            <img src="images/animaux/chameau.jpg" alt="">
+            <img src="images/animaux/chameau.jpg" alt="" />
           </section>
-          <section>
           <h1>Kevin le Chameau</h1>
           <div class="pay">
             <h2>299,99 €</h2>
-            <button>Ajouter</button>
+            <button onclick="ajouterAuPanier('Kevin','299,99 €','chameau.jpg')">
+              Ajouter
+            </button>
           </div>
         </div>
-        <div id="product"> <!-- Girafe -->
+        <div id="product">
           <section class="images">
-            <img src="images/animaux/girafe.jpg" alt="">
+            <img src="images/animaux/girafe.jpg" alt="" />
           </section>
-          <section>
           <h1>Sophie la Girafe</h1>
           <div class="pay">
             <h2>349,99 €</h2>
-            <button>Ajouter</button>
+            <button onclick="ajouterAuPanier('Sophie','349,99 €','girafe.jpg')">
+              Ajouter
+            </button>
           </div>
         </div>
-        <div id="product"> <!-- Panda -->
+        <div id="product">
           <section class="images">
-            <img src="images/animaux/panda.jpg" alt="">
+            <img src="images/animaux/panda.jpg" alt="" />
           </section>
-          <section>
           <h1>Po le Panda</h1>
           <div class="pay">
             <h2>799,99 €</h2>
-            <button>Ajouter</button>
+            <button onclick="ajouterAuPanier('Po','799,99 €','panda.jpg')">
+              Ajouter
+            </button>
           </div>
         </div>
-        <div id="product"> <!-- Cheval -->
+        <div id="product">
           <section class="images">
-            <img src="images/animaux/cheval.jpg" alt="">
+            <img src="images/animaux/cheval.jpg" alt="" />
           </section>
-          <section>
           <h1>Yakari le Cheval</h1>
           <div class="pay">
             <h2>699,99 €</h2>
-            <button onclick="ajouterAuPanier('Simba','999,99 €','lion.png')">Ajouter</button>
+            <button onclick="ajouterAuPanier('Yakari','699,99 €','cheval.jpg')">
+              Ajouter
+            </button>
           </div>
         </div>
-        <div id="product"> <!-- Lama -->
+        <div id="product">
           <section class="images">
-            <img src="images/animaux/lama.jpeg" alt="">
+            <img src="images/animaux/lama.jpeg" alt="" />
           </section>
-          <section>
           <h1>Hirma le Lama</h1>
           <div class="pay">
             <h2>799,99 €</h2>
-            <button onclick="ajouterAuPanier('Hirma','999,99 €','lion.png')">Ajouter</button>
+            <button onclick="ajouterAuPanier('Hirma','999,99 €','lion.png')">
+              Ajouter
+            </button>
           </div>
         </div>
-        <div id="product"> <!-- Lion -->
+        <div id="product">
           <section class="images">
-            <img src="images/animaux/lion.png" alt="">
+            <img src="images/animaux/elephant.jpg" alt="" />
           </section>
-          <section>
-          <h1>Simba le Lion</h1>
+          <h1>Jumbo l'Eléphant</h1>
           <div class="pay">
-            <h2>999,99 €</h2>
-            <button onclick="ajouterAuPanier('Simba','999,99 €','lion.png')">Ajouter</button>
+            <h2>449,99 €</h2>
+            <button
+              onclick="ajouterAuPanier('Jumbo','449,99 €','elephant.jpg')"
+            >
+              Ajouter
+            </button>
+          </div>
+        </div>
+        <div id="product">
+          <section class="images">
+            <img src="images/animaux/lezard.jpg" alt="" />
+          </section>
+          <h1>Draco le Lézard</h1>
+          <div class="pay">
+            <h2>329,99 €</h2>
+            <button onclick="ajouterAuPanier('Draco','329,99 €','lezard.jpg')">
+              Ajouter
+            </button>
+          </div>
+        </div>
+        <div id="product">
+          <section class="images">
+            <img src="images/animaux/tortue.jpg" alt="" />
+          </section>
+          <h1>Sam la tortue</h1>
+          <div class="pay">
+            <h2>399,99 €</h2>
+            <button onclick="ajouterAuPanier('Sam','399,99 €','tortue.jpg')">
+              Ajouter
+            </button>
+          </div>
+        </div>
+        <div id="product">
+          <section class="images">
+            <img src="images/animaux/vache.jpg" alt="" />
+          </section>
+          <h1>Cindy la Vache</h1>
+          <div class="pay">
+            <h2>749,99 €</h2>
+            <button onclick="ajouterAuPanier('Cindy','749,99 €','vache.jpg')">
+              Ajouter
+            </button>
           </div>
         </div>
       </div>
       <div id="panier">
         <h1>Panier</h1>
         <div class="items">
+          <div class="empty-cart">
+            <img src="images/logos/shopping-cart.svg" />
+            <p>Panier Vide</p>
+          </div>
+
           <!-- Insert of items :  -->
         </div>
       </div>

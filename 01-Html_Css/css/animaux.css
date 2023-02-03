@@ -1,21 +1,29 @@
 body {
-  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(98, 255, 0, 0.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #2f6ed3),
+    color-stop(20%, #5095e4),
+    color-stop(60%, #5095e4),
+    color-stop(95%, #2f6ed3)
+  );
 }
 .content {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  align-items: start;
+  margin: 2em 0;
 }
 .animaux-grid {
   display: grid;
+  gap: 2em;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
 }
 #product {
   display: flex;
   width: 350px;
-  margin: 1em;
   background-color: white;
   border-radius: 20px;
   box-shadow: var(--main-box-shadow);
@@ -56,7 +64,7 @@ body {
   font-size: 30px;
   /* color: #065fd4; */
   padding: 10px;
-  background-color: #F4D03F;
+  background-color: #f4d03f;
   border-radius: 10px;
   border: 1px solid var(--text);
   transition: transform 0.3s ease;
@@ -66,15 +74,11 @@ body {
   transform: scale(105%);
   transition: transform 0.3s ease;
 }
-
 #panier {
-  position: fixed;
+  position: sticky;
+  top: 13vh;
   background-color: white;
-  height: 68%;
-  width: 25%;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
+  min-height: 500px;
   border-radius: 20px 0 0 20px;
   box-shadow: var(--main-box-shadow);
 }
@@ -87,6 +91,7 @@ body {
 #panier .items {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0.5em;
   margin: 0;
 }
@@ -110,14 +115,12 @@ body {
   color: var(--text);
   margin-left: 0.5em;
   margin-right: 0.5em;
-
 }
 #panier .item h3 {
   font-size: 20px;
   color: var(--text);
   margin-left: 0.5em;
   margin-right: 0.5em;
-
 }
 #panier .item button {
   padding: 7px;
@@ -136,4 +139,20 @@ body {
   height: 25px;
   object-fit: cover;
   border-radius: 10px;
+}
+#panier .empty-cart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7em;
+  align-items: center;
+}
+#panier .empty-cart img {
+  width: 50px;
+}
+#panier .empty-cart p {
+  text-align: center;
+  font-size: 20px;
+}
+#panier .empty-cart.hidden {
+  display: none;
 }

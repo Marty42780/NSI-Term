@@ -177,7 +177,9 @@ img:not(#menuDiv img) {
 .tp4-pdf {
   width: 40%;
 }
-
+#tt4 img:nth-child(1){
+  width: 40em;
+}
 /* --------------------------------- Thème 5 -------------------------------- */
 #tp5 {
   background-color: rgb(80, 110, 209);
