@@ -1,5 +1,12 @@
-liste_a_trier = [80, 14, 60, 17, 97, 19, 67, 81, 13, 52]
+from math import ceil
+
+A = [23, 12, 4, 56, 35, 32, 42, 57, 3]
 
 def diviser(liste: list) -> list:
     if len(liste) > 1:
-        return (liste[:int(len(liste)/2)], liste[int(len(liste)/2):])
+        return (liste[:ceil(len(liste)/2)], liste[ceil(len(liste)/2):])
+    else:
+        return liste
+
+def trier(liste: list) -> list:
+   pass 
