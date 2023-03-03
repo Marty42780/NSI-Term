@@ -18,14 +18,19 @@ n3 = ABR(None, 3, None)
 n2 = ABR(None, 2, n3)
 abr1 = ABR(n0, 1, n2)
 
-
 def ajoute(cle, a):
-    pass
-
+    if a == None:
+        return (None, cle, None)
+    elif cle == a.cle:
+        return a
+    elif cle < a.cle:
+        return (ajoute(cle, a.gauche), a.cle, a.droit)
+    else:
+        return (a.gauche, a.cle, ajoute(cle, a.droit))
+    
 
 #------------EXERCICE 2---------------------------
 #-------algorithme glouton de mise en boite-------
-
 
 def empaqueter(liste_masses, c):
     n = len(liste_masses)
