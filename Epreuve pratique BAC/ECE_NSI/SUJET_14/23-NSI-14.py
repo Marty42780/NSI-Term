@@ -1,12 +1,31 @@
+# Epreuve Pratique BAC NSI
+# SUJET 14
+
+#------------EXERCICE 1---------------------------
+#---------Recherche-------------------------------
+
+def recherche(elt, tab):
+    if elt in tab:
+        for i in range(len(tab)):
+            if elt == tab[i]:
+                return i
+            i += 1
+    else:
+        return -1
+
+
+#------------EXERCICE 2---------------------------
+#---------insertion-------------------------------
+
 def insere(a, tab):
-	""" Insère l'élément a (int) dans le tableau tab (list)
-        trié par ordre croissant à sa place et renvoie le
-        nouveau tableau. """
-    l = list(tab) #l contient les memes elements que tab
+    l = list(tab)
     l.append(a)
-    i = ...
-    while a < ... and i >= 0: 
-      l[i+1] = ...
-      l[i] = a
-      i = ...
+    i = len(l) - 1
+    print(l, i)
+    while a < l[i-1] and i >= 0: 
+        print(l)
+        l[i+1] = l[i] # Marche pas
+        l[i] = a
+        i = i-1 
     return l
+
