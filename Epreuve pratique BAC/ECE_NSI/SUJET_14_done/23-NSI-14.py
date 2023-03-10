@@ -20,9 +20,9 @@ def recherche(elt, tab):
 def insere(a, tab):
     l = list(tab)
     l.append(a)
-    i = len(l) - 1
+    i = len(l) - 2
     print(l, i)
-    while a < l[i-1] and i >= 0: 
+    while a < l[i] and i >= 0: 
         print(l)
         l[i+1] = l[i] # Marche pas
         l[i] = a
