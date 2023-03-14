@@ -8,7 +8,7 @@
 
 Dans ce chapitre nous avons travaillé sur les listes, les piles, les files et les dictionnaires ainsi que leur applications réelles.
 
-## I. Notions d'interface
+## I. Notion d'interface
 
 Interface -> Routines CRUD (Create, Read, Update, Delete) des structures de données.  
 Ce sont des opérations fondamentales pour gérer des données.
