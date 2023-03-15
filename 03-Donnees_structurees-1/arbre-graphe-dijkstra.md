@@ -30,7 +30,7 @@ Note : La profondeur d'un arbre peut-être mesuré en partant de 0 ou (comme ci-
 Dans un arbre binaire, un noeud possède au plus 2 fils.  
 On parle donc d'un sous-arbre gauche et d'un sous-arbre droit *(voir arbre ci-dessus)*.
 
-<img src="resources/arbre2.png" style="max-width: 539px">
+![Arbre UNIX](resources/arbre2.png)
 
 *Figure 2 : Arborescence d'un système UNIX sous forme d'un arbre.*
 
@@ -49,12 +49,7 @@ Les graphes peuvent, par exemple, aider à se représenter :
 
 ### Vocabulaire
 
-Un graphe est composé de sommets, d'arêtes (ou arc) les joignant.
-  
-Ordre = nombre de sommets d'un graphe  
-Degré = nombre d'arêtes partant d'un sommet  
-Sommets adjacents = reliés par une arête
-
+Un graphe est composé de sommets et d'arêtes (ou arc) les joignant.    
 Un graphe est dit complet si toute paire de sommets est reliée par une arête.
 
 Un graphe peut être : 
@@ -62,26 +57,70 @@ Un graphe peut être :
 - pondéré (poids sur les arêtes)
 - connexe (de n'importe quel point, on peut atteindre tous les autres)
 
-Un cycle est suite d'arêtes formant une boucle.  
+Ordre = nombre de sommets d'un graphe  
+Degré = nombre d'arêtes partant d'un sommet  
+Sommets adjacents = reliés par une arête
 
+
+Cycle = suite d'arêtes formant une boucle.  
 Une chaîne eulérienne (ou graphe eulérien) est un graphe que l'on peut tracer sans lever le crayon.  
-Un cycle eulérien (ou circuit eulérien) est une chaine eulérienne qui revient à son sommet de départ.
+
+![Exemple graphe eulérien](https://upload.wikimedia.org/wikipedia/commons/d/d5/Eulerianpath_drawing.gif?uselang=fr)
+
+*Figure 3 : Exemple graphe eulérien*
+
+Note : Si un chemin eulérien revient au sommet de départ, on parle de cycle eulérien ou circuit eulérien.
+
+**Voir** **Théorème Eulérien** (sur [le cours](Activite-6_Arbres_et_Graphes/1-Arbres.pdf) ou [Wikipédia](https://fr.wikipedia.org/wiki/Graphe_eul%C3%A9rien))
+
+### Exemple Réseaux sociaux
+
+![Exemple réseaux sociaux](resources/graph2.png)
+
+**Distance** = nombre d'arêtes minimum à traverser pour aller d'un sommet à un autre.  
+*Exemple : Entre `L` et `R`, la distance est 2.*
+
+**Ecartement** = distance maximum entre un sommet et les autres sommets du graphe.  
+*Exemple : L'écartement du sommet `Q` est 3.* 
+
+**Centre** = sommet d'écartement minimal.  
+*Exemple : Les centres sont `L`, `N`, `O` et `P`.*
+
+**Rayon** = écartement d'un centre.  
+*Exemple : Le rayon est 2.*
+
+**Diamètre** = distance maximale entre deux sommets du graphe.  
+*Exemple : Le diamètre est 3, (entre `Q` et `M`).*
 
 ### Représentation
 
-<img src="resources/graph1.png" style="max-width: 539px">
+![Graphe non orienté](resources/graph1.png)
 
-*Figure 3 : Exemple de graph non orienté*
+*Figure 3 : Exemple de graphe non orienté*
 
 Le graphe montré ci-dessus peut s'écrire :
 
++ Écriture sous forme d'un dictionnaire
 ```Python
 G = {A: [B, C, E], B: [A], C: [A], D: [E], E: [A, D]}
 ```
 
-<br>
-🚧 In progress 🚧
-<br><br>
++ Graph simple
+```Python
+# En français
+G = (S, A) 
+	 |	|
+	 |	+-> Ensemble des arêtes
+	 +-> Ensemble des sommets
+
+# Ou en anglais :
+G = (V, E) # Vertice (also called nodes) and edge (also called links)
+
+# Exemple :
+V = {1,2,3,4,5,6}
+E = {{1,2}, {1,5}, {2,3}, {2,5}, {3,4}, {4,5}, {4,6}}
+```
+
 
 ---
 
