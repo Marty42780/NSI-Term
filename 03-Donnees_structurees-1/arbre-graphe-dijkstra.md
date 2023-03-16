@@ -98,20 +98,18 @@ Note : Si un chemin eulérien revient au sommet de départ, on parle de cycle eu
 
 *Figure 3 : Exemple de graphe non orienté*
 
-Le graphe montré ci-dessus peut s'écrire :
-
 + Écriture sous forme d'un dictionnaire
 ```Python
 G = {A: [B, C, E], B: [A], C: [A], D: [E], E: [A, D]}
 ```
 
-+ Graph simple
++ Graphe simple
 ```Python
 # En français
 G = (S, A) 
-	 |	|
-	 |	+-> Ensemble des arêtes
-	 +-> Ensemble des sommets
+     |	|
+     |	+-> Ensemble des arêtes
+     +-> Ensemble des sommets
 
 # Ou en anglais :
 G = (V, E) # Vertice (also called nodes) and edge (also called links)
