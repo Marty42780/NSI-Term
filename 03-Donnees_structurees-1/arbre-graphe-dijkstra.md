@@ -119,6 +119,9 @@ V = {1,2,3,4,5,6}
 E = {{1,2}, {1,5}, {2,3}, {2,5}, {3,4}, {4,5}, {4,6}}
 ```
 
++ Matrice d'adjacence
+
+![Matrice d'adjacence de Graph](resources/graph3.png)
 
 ---
 
