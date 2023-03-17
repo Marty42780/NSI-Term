@@ -61,7 +61,6 @@ Ordre = nombre de sommets d'un graphe
 Degré = nombre d'arêtes partant d'un sommet  
 Sommets adjacents = reliés par une arête
 
-
 Cycle = suite d'arêtes formant une boucle.  
 Une chaîne eulérienne (ou graphe eulérien) est un graphe que l'on peut tracer sans lever le crayon.  
 
@@ -122,6 +121,18 @@ E = {{1,2}, {1,5}, {2,3}, {2,5}, {3,4}, {4,5}, {4,6}}
 + Matrice d'adjacence
 
 ![Matrice d'adjacence de Graph](resources/graph3.png)
+
+## III. Algorithme de Dijkstra
+
+L'algorithme de Dijkstra permet de trouver le plus court chemin entre deux sommets d'un graphe pondéré.
+
+### Exemple
+
+![Algorithme de Dijkstra](resources/dijkstra.png)
+
+*Figure 4 : Exemple de l'algorithme de Dijkstra*
+
+Voir [le cours](Activite-6_Arbres_et_Graphes/3-dijkstra.pdf) pour plus d'informations.
 
 ---
 
