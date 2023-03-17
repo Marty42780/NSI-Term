@@ -1,4 +1,10 @@
 {
     "python.analysis.typeCheckingMode": "basic",
-    "cSpell.language": "en,fr,fr-FR"
+    "cSpell.language": "fr,fr-FR,en",
+    "cSpell.enableFiletypes": [
+        "markdown"
+    ],
+    "cSpell.words": [
+        "CISC"
+    ]
 }
