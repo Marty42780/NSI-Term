@@ -19,7 +19,7 @@ Ce sont des opérations fondamentales pour gérer des données.
 
 Séquentielle / linéaire
 
-### Exemples :
+### Exemples
 
 ```python
 A = [3, 1, 4] 
@@ -36,8 +36,10 @@ Autre écriture possible (récursivité) :
 ```python
 C = (3, (1, (4, [])))
 ```
+
 ### Représentation
-<img src="resources/liste.png" style="max-width: 400px; max-height: 250px">
+
+![Liste](resources/liste.png)
 
 *Figure 1 : Représentation sous forme d'un tableau. À noter que le compteur (3) correspond à l'indice du dernier élément de la liste.*
 
@@ -50,13 +52,13 @@ Un élément A entré après un élément B, sortira avant l'élément B
 
 Les actions possibles : *Empiler* et *Dépiler*.
 
-<img src="resources/pile.jpg" style="max-width: 500px; max-height: 250px">
+![Opérations sur les piles](resources/pile1.jpg)
 
 *Figure 2 : Opérations sur les piles*
 
 ### Représentation
 
-<img src="resources/pile2.png" style="max-width: 400px; max-height: 250px">
+![Représentation sous forme d'un tableau](resources/pile2.png)
 
 *Figure 3 : Représentation sous forme d'un tableau. À noter que le compteur (4) est l'indice du premier emplacement libre.*
 
@@ -73,12 +75,11 @@ La file a une tête (prochain élément qui sortira) et une queue (dernier élé
 
 Les actions possibles : *Enfiler* et *Défiler*.
 
-<img src="resources/file.png" style="max-width: 400px; max-height: 250px">
+![Opérations sur les files](resources/file1.png)
 
 *Figure 4 : Opérations sur les files*
 
-
-<img src="resources/file2.png" style="max-width: 400px; max-height: 250px">
+![Représentation sous forme d'un tableau](resources/file2.png)
 
 *Figure 5 : Représentation sous forme d'un tableau. À noter que le compteur (4) est l'indice du premier emplacement libre.*
 

@@ -79,6 +79,7 @@ Plusieurs algorithmes d'ordonnancement :
 Note : Le processus 0 est le processus init, il n'a pas de parent.
 
 ![Arborescence des processus](resources/os4.png)
+<!-- TODO: Change the Background of this image to white -->
 
 *Figure 4 : Arborescence des processus*
 

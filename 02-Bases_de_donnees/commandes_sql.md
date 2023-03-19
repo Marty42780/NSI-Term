@@ -1,6 +1,8 @@
 # Commandes SQL
 
-Vous trouverez ci-dessous une liste des commandes SQL usuelles.
+Logiciel pour gérer les bases de données : système de gestion de base de données.
+
+Vous trouverez ci-dessous une liste des commandes SQL usuelles.  
 Référez-vous aux annexes pour plus d'inforations ou des éclaircissements.
 
 
@@ -9,7 +11,6 @@ Référez-vous aux annexes pour plus d'inforations ou des éclaircissements.
 | Commande   |       Usages |
 | :--------- | -----------: |
 | `-- text`  |  Commentaire |
-
 
 ## Gérer des bases de données et des tables
 
@@ -22,7 +23,6 @@ Référez-vous aux annexes pour plus d'inforations ou des éclaircissements.
 | `TRUNCATE TABLE table_name`           |      Supprime toutes les données d'une table |
 | `DROP TABLE table_name`               |  Supprime une table dans une base de données |
 
-
 ## Instructions (avec ALTER TABLE)
 
 | Commande                                      |                Usages |
@@ -31,7 +31,6 @@ Référez-vous aux annexes pour plus d'inforations ou des éclaircissements.
 | `DROP column`                                 |  Supprime une colonne |
 | `RENAME TO new-table-name`                    |     Renomme une table |
 | `RENAME old-column-name TO new-column-name`   |   Renomme une colonne |
-
 
 ## Gérer des données
 

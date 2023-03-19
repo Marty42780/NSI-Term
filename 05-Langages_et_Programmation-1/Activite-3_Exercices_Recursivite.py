@@ -1,4 +1,4 @@
-""" Exerice 1 (Calcul des lignes du triangle de pascal) """
+""" Exercice 1 (Calcul des lignes du triangle de pascal) """
 
 
 def pascal_triangle_line(n):

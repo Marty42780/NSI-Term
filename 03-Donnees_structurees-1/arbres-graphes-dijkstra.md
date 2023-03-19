@@ -8,26 +8,27 @@
 
 ## I. Arbres
 
-<img src="resources/arbre1.png"> <!-- Largeur de l'image: 539px -->
+![Arbre](resources/arbre1.png)
 
 *Figure 1 : Exemple d'un arbre de profondeur 5.*
 
-### Noeud
+### Nœud
 
-Noeud racine = Noeud sans parent (unique dans l'arbre)  
-Feuille = Noeud sans enfants  
-Les noeuds sont reliés entre eux par des arêtes.
+Nœud racine = Nœud sans parent (unique dans l'arbre)  
+Feuille = Nœud sans enfants  
+Les nœuds sont reliés entre eux par des arêtes.
 
 ### Arbre
-Taille = nombre de noeuds  
+
+Taille = nombre de nœuds  
 Profondeur = Distance à la racine  
 Hauteur = Profondeur maximum de l'arbre
- 
+
 Note : La profondeur d'un arbre peut-être mesuré en partant de 0 ou (comme ci-dessus) de 1.
 
 ### Arbre binaire
 
-Dans un arbre binaire, un noeud possède au plus 2 fils.  
+Dans un arbre binaire, un nœud possède au plus 2 fils.  
 On parle donc d'un sous-arbre gauche et d'un sous-arbre droit *(voir arbre ci-dessus)*.
 
 ![Arbre UNIX](resources/arbre2.png)
@@ -35,24 +36,26 @@ On parle donc d'un sous-arbre gauche et d'un sous-arbre droit *(voir arbre ci-de
 *Figure 2 : Arborescence d'un système UNIX sous forme d'un arbre.*
 
 Affirmation 1 : `grub.cfg` est dans le sous-arbre gauche de `boot` (en considérant boot comme la racine de l'arbre).  
-Affirmation 2 : La **hauteur** de l'arbre est 5 (si la racine est à 0).   
+Affirmation 2 : La **hauteur** de l'arbre est 5 (si la racine est à 0).  
 Affirmation 3 : La **profondeur** de `max` est de 3 (si la racine est à 1).  
-Affirmation 4 : `boot` est le noeud **père** de grub, qui est son **fils**.
+Affirmation 4 : `boot` est le nœud **père** de grub, qui est son **fils**.
 
 ---
 
 ## II. Graphes
 
 Les graphes peuvent, par exemple, aider à se représenter :
+
 - les relations de comptes dans des réseaux sociaux
 - des zones géographiques à optimiser en logistique
 
 ### Vocabulaire
 
-Un graphe est composé de sommets et d'arêtes (ou arc) les joignant.    
+Un graphe est composé de sommets et d'arêtes (ou arc) les joignant.  
 Un graphe est dit complet si toute paire de sommets est reliée par une arête.
 
-Un graphe peut être : 
+Un graphe peut être :
+
 - orienté (fléché)
 - pondéré (poids sur les arêtes)
 - connexe (de n'importe quel point, on peut atteindre tous les autres)
@@ -79,8 +82,8 @@ Note : Si un chemin eulérien revient au sommet de départ, on parle de cycle eu
 **Distance** = nombre d'arêtes minimum à traverser pour aller d'un sommet à un autre.  
 *Exemple : Entre `L` et `R`, la distance est 2.*
 
-**Ecartement** = distance maximum entre un sommet et les autres sommets du graphe.  
-*Exemple : L'écartement du sommet `Q` est 3.* 
+**Écartement** = distance maximum entre un sommet et les autres sommets du graphe.  
+*Exemple : L'écartement du sommet `Q` est 3.*
 
 **Centre** = sommet d'écartement minimal.  
 *Exemple : Les centres sont `L`, `N`, `O` et `P`.*
@@ -97,12 +100,14 @@ Note : Si un chemin eulérien revient au sommet de départ, on parle de cycle eu
 
 *Figure 3 : Exemple de graphe non orienté*
 
-+ Écriture sous forme d'un dictionnaire
+- Écriture sous forme d'un dictionnaire
+
 ```Python
 G = {A: [B, C, E], B: [A], C: [A], D: [E], E: [A, D]}
 ```
 
-+ Graphe simple
+- Graphe simple
+
 ```Python
 # En français
 G = (S, A) 
@@ -111,14 +116,14 @@ G = (S, A)
      +-> Ensemble des sommets
 
 # Ou en anglais :
-G = (V, E) # Vertice (also called nodes) and edge (also called links)
+G = (V, E) # Vertices (also called nodes) and edges (also called links)
 
 # Exemple :
 V = {1,2,3,4,5,6}
 E = {{1,2}, {1,5}, {2,3}, {2,5}, {3,4}, {4,5}, {4,6}}
 ```
 
-+ Matrice d'adjacence
+- Matrice d'adjacence
 
 ![Matrice d'adjacence de Graph](resources/graph3.png)
 

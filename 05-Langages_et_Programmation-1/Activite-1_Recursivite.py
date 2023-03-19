@@ -1,4 +1,3 @@
-
 """ Exercice 1 """
 
 def fctA ():
@@ -19,7 +18,6 @@ def fctB():
         i += 1
     print("Fin fonction fctB")
     
-# fctB()
 
 """ Exercice 2 """
 
@@ -27,7 +25,6 @@ def fctC():
     print("Hello World!")
     fctC()
 
-# fctC()
 
 """ Exercice 3 """
 
@@ -36,7 +33,6 @@ def fctD(n):
         fctD(n-1)
     print(n)
 
-# fctD(3)
 
 """ Exercice 4 """
 
@@ -46,5 +42,3 @@ def fctE(n):
     else:
         return 1
     
-print(fctE(3))
-

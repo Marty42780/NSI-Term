@@ -19,5 +19,6 @@ Note : on peut représenter un réseau de réseaux par un graphe ([voir le cours
 Les 2 protocoles au programme sont les protocoles RIP (Routing Information Protocol) et OSPF (Open Shortest Path First) : 
 - protocole RIP : s'appuie sur l'algorithme de Bellman-Ford (algorithme qui permet de calculer les plus courts chemins dans un graphe). Le protocole RIP utilise le nombre de sauts comme métrique. Ce protocole est aujourd'hui très rarement utilisé dans les grandes infrastructures.  
 - protocole OSPF : s'appuie sur l'algorithme de Dijkstra. Le protocole OSPF utilise le “coût” comme métrique (la notion de coût est directement liée au débit des liaisons entre les routeurs).
+<!-- TODO: plus de synthétisation serai appréciable -->
 
 Note : il faut être capable d’identifier la route empruntée par un paquet suivant le protocole de routage utilisé (RIP ou OSPF).
