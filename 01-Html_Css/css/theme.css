@@ -123,7 +123,6 @@ img:not(#menuDiv img) {
     display: none;
   }
 }
-
 /* --------------------------------- Thème 2 -------------------------------- */
 #tp2,
 #tt2 {
@@ -177,14 +176,19 @@ img:not(#menuDiv img) {
 .tp4-pdf {
   width: 40%;
 }
-#tt4 img:nth-child(1){
-  width: 40em;
+#tt4 img:first-child {
+  width: 30%;
 }
+#tt4 img {
+  width: 70%;
+}
+
 /* --------------------------------- Thème 5 -------------------------------- */
-#tp5 {
+#tp5,
+#tt5 {
   background-color: rgb(80, 110, 209);
 }
-#tp5 div.doc {
+#tp5 .doc {
   width: 60em;
 }
 #tp5 img {
@@ -197,16 +201,37 @@ img:not(#menuDiv img) {
 .tp5-pdf {
   width: 45%;
 }
+#tt5 .doc img {
+  width: 413px;
+}
+#tt5 img {
+  width: 30%;
+}
+
+/* --------------------------------- Thème 6 -------------------------------- */
+
+#tt6 {
+  background-color: rgb(151, 80, 209);
+}
+#tt6 img {
+  width: 30%;
+}
 
 /* --------------------------------- Thème 7 -------------------------------- */
 #tp7 {
   background-color: rgb(151, 80, 209);
+}
+#tt7 {
+  background-color: rgb(218, 104, 184);
 }
 #tp7 img.part1 {
   width: 27%;
 }
 #tp7 img.partp2 {
   height: 300px;
+}
+#tp7 .doc {
+  width: 50%;
 }
 
 /* --------------------------------- Thème 8 -------------------------------- */

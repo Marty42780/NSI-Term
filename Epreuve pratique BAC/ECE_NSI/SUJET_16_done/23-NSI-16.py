@@ -17,8 +17,9 @@ def recherche_indices_classement(elt: int, tab: list):
             result_sup.append(i)
     return result_inf, result_equal, result_sup
 
-'''
 
+#------------EXERCICE 2---------------------------
+#-------------------------------------------------
 
 resultats = {
     'Dupont': {
@@ -40,16 +41,16 @@ resultats = {
 }
 
 def moyenne(nom, dico_result):
-    if nom in ...:
+    if nom in dico_result:
         notes = dico_result[nom]
-        total_points = ...
-        total_coefficients = ...
-        for ...  in notes.values():
-            note, coefficient = valeurs
-            total_points = total_points + ... * coefficient
-            total_coefficients = ... + coefficient
-        return round( ... / total_coefficients, 1 )
+        total_points = 0
+        total_coefficients = 0
+        for valeurs in notes.values():
+            note, coefficient = valeurs[0], valeurs[1]
+            total_points = total_points + note * coefficient
+            total_coefficients = total_coefficients + coefficient
+        return round( total_points / total_coefficients, 1 )
     else:
         return -1
 
-        '''
+
