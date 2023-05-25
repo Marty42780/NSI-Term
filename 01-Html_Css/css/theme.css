@@ -233,10 +233,22 @@ img:not(#menuDiv img) {
 #tp7 .doc {
   width: 50%;
 }
+#tt7 .doc {
+  width: 40%;
+}
+#tt7 img {
+  width: 90%;
+}
+#tt7 .elephant {
+  width: 25%;
+}
 
 /* --------------------------------- Thème 8 -------------------------------- */
 #tp8 {
   background-color: rgb(218, 104, 184);
+}
+#tt8 {
+  background-color: rgb(223, 213, 83);
 }
 #tp8 div.doc {
   width: 50%;
@@ -246,6 +258,12 @@ img:not(#menuDiv img) {
 }
 #tp8 img.partp2 {
   width: 90%;
+}
+#tt8 img:nth-child(1) {
+  width: 27%;
+}
+#tt8 img:nth-child(3) {
+  width: 35%;
 }
 
 /* --------------------------------- Thème 9 -------------------------------- */

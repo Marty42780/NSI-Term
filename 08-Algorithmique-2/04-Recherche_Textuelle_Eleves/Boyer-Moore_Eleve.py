@@ -22,3 +22,4 @@ def recherche(txt, motif):
             decalage = decalage + max(1, j-tab_car[ord(txt[decalage+j])])
     return res
 
+print(recherche("abracadabra", "abra"))
